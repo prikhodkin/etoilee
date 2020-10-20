@@ -1,3 +1,39 @@
 @font-face {
-  @include includeFont(200, $first-font, "Montserrat-Thin");
+  @include includeFont(300, $first-font, "Geometria-Light");
+}
+
+@font-face {
+  @include includeFont(400, $first-font, "Geometria-Regular");
+}
+
+@font-face {
+  @include includeFont(500, $first-font, "Geometria-Medium");
+}
+
+@font-face {
+  @include includeFont(700, $first-font, "Geometria-Bold");
+}
+
+@font-face {
+  @include includeFont(800, $first-font, "Geometria-ExtraBold");
+}
+
+@font-face {
+  @include includeFont(400, $second-font, "Montserrat-Regular");
+}
+
+@font-face {
+  @include includeFont(600, $second-font, "Montserrat-SemiBold");
+}
+
+@font-face {
+  @include includeFont(400, $third-font, "OpenSans-Regular");
+}
+
+@font-face {
+  @include includeFont(600, $third-font, "OpenSans-SemiBold");
+}
+
+@font-face {
+  @include includeFont(400, $fourth-font, "Brother1816-Regular");
 }
