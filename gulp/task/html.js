@@ -27,4 +27,5 @@ module.exports = function html() {
     .pipe(browserSync.reload({
       stream: true
     }))
+
 };
