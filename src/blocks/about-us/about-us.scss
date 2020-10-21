@@ -7,6 +7,10 @@
 
 .about-us__title {
   margin-bottom: 20px;
+
+  &::after {
+    background-color: #6697C5;
+  }
 }
 
 .about-us__text {
@@ -42,7 +46,7 @@
     width: 60px;
     height: 98px;
     background-image: url("../../img/about__before.svg");
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -64,10 +68,11 @@
 
     &::before {
       top: inherit;
-      bottom: -9px;
-      left: -9px;
-      width: 70px;
-      height: 170px;
+      bottom: -25px;
+      left: -15px;
+      width: 740px;
+      height: 468px;
+      background-image: url("../../img/about__before@tablet.svg");
     }
   }
 }
