@@ -31,5 +31,28 @@
       <a class="nav__button button" href="#">get a certificate</a>
     </nav>
   </header>
+  <main>
+    <h1 class="visually-hidden">Entreprise étoilée</h1>
+    <section class="promo"></section>
+    <section class="about-us">
+      <div class="about-us__box">
+        <h2 class="about-us__title title">À propos de nous</h2>
+        <p class="about-us__text">Notre organisation a pour but de soutenir les entreprises et entrepreneurs dans leurs actions positives en faveur de l’intérêt général et de l’économie solidaire. On a mobilisé plus de 35 experts qualifiés en France et à l’international afin de vous apporter la garantie de votre maîtrise de la sécurité et de la qualité de vos opérations quotidiennes auprès des principaux clients européens.</p>
+        <div class="about-us__logo logo">
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#logo__icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="about-us__image">
+        <picture>
+          <source media="(min-width: 1200px)" type="image/webp" srcset="../img/about__img@desktop.webp">
+          <source media="(min-width: 1200px)" srcset="../img/about__img@desktop.jpg">
+          <source type="image/webp" srcset="../img/about__img@mobile.webp">
+          <img class="about-us__img" src="../img/about__img@mobile.jpg" alt="">
+        </picture>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
