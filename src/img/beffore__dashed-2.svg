@@ -1,0 +1,24 @@
+<svg width="192" height="85" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="82.5" cy="82.5" r="2.2" transform="rotate(-180 82 82)" fill="#0257A6"/>
+  <circle cx="55.4" cy="82.5" r="2.2" transform="rotate(-180 55 82)" fill="#0257A6"/>
+  <circle cx="29.2" cy="82.5" r="2.2" transform="rotate(-180 29 82)" fill="#0257A6"/>
+  <circle cx="2.2" cy="82.5" r="2.2" transform="rotate(-180 2 82)" fill="#0257A6"/>
+  <circle cx="82.5" cy="55.4" r="2.2" transform="rotate(-180 82 55)" fill="#0257A6"/>
+  <circle cx="55.4" cy="55.4" r="2.2" transform="rotate(-180 55 55)" fill="#0257A6"/>
+  <circle cx="29.2" cy="55.4" r="2.2" transform="rotate(-180 29 55)" fill="#0257A6"/>
+  <circle cx="2.2" cy="55.4" r="2.2" transform="rotate(-180 2 55)" fill="#0257A6"/>
+  <circle cx="82.5" cy="29.2" r="2.2" transform="rotate(-180 82 29)" fill="#0257A6"/>
+  <circle cx="82.5" cy="2.2" r="2.2" transform="rotate(-180 82 2)" fill="#0257A6"/>
+  <circle cx="136.4" cy="82.5" r="2.2" transform="rotate(-180 136 82)" fill="#0257A6"/>
+  <circle cx="109.3" cy="82.5" r="2.2" transform="rotate(-180 109 82)" fill="#0257A6"/>
+  <circle cx="136.4" cy="55.4" r="2.2" transform="rotate(-180 136 55)" fill="#0257A6"/>
+  <circle cx="109.3" cy="55.4" r="2.2" transform="rotate(-180 109 55)" fill="#0257A6"/>
+  <circle cx="136.4" cy="29.2" r="2.2" transform="rotate(-180 136 29)" fill="#0257A6"/>
+  <circle cx="109.3" cy="29.2" r="2.2" transform="rotate(-180 109 29)" fill="#0257A6"/>
+  <circle cx="136.4" cy="2.2" r="2.2" transform="rotate(-180 136 2)" fill="#0257A6"/>
+  <circle cx="109.3" cy="2.2" r="2.2" transform="rotate(-180 109 2)" fill="#0257A6"/>
+  <circle cx="189.2" cy="29.2" r="2.2" transform="rotate(-180 189 29)" fill="#0257A6"/>
+  <circle cx="162.1" cy="29.2" r="2.2" transform="rotate(-180 162 29)" fill="#0257A6"/>
+  <circle cx="189.2" cy="2.2" r="2.2" transform="rotate(-180 189 2)" fill="#0257A6"/>
+  <circle cx="162.1" cy="2.2" r="2.2" transform="rotate(-180 162 2)" fill="#0257A6"/>
+</svg>

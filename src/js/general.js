@@ -6,15 +6,11 @@ import Tabs from "%modules%/tabs/tabs"
 import { $, $$ } from "./util";
 
 
-Turbolinks.start();
-
 const application = Application.start()
 const context = require.context("./controllers", true, /\.js$/);
 application.load(definitionsFromContext(context));
 
 
-const tabs = $(`[data-tabs]`);
-new Tabs(tabs);
 
 //Открыть меню
 let toggleNav = document.querySelector(".header__toggle");

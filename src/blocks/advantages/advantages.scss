@@ -1,0 +1,159 @@
+.advantages {
+  position: relative;
+  background-color: #00498c;
+
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url("../../img/Bichro__background-img.jpg");
+    background-size: cover;
+    opacity: 0.15;
+  }
+}
+
+.advantages__container {
+  position: relative;
+  z-index: 1;
+  padding: 40px 20px;
+  padding-bottom: 47px;
+}
+
+.advantages__title {
+  margin-bottom: 40px;
+  color: #ffffff;
+
+  &::after {
+    background-color: #ffffff;
+  }
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 34px;
+  }
+
+  &:nth-child(2) {
+    width: 80%;
+  }
+
+  &:nth-child(5) {
+    width: 95%;
+  }
+}
+
+.advantages__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 42px;
+  height: 42px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  & svg {
+    width: 23px;
+    height: 23px;
+    fill: #6697c5;
+  }
+}
+
+.advantages__text {
+  margin-left: 18px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 141.8%;
+  color: #ffffff;
+
+  & span {
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages {
+    &::before {
+      width: 100%;
+      min-height: 100%;
+      background-image: url("../../img/Bichro__background-img@desktop.jpg");
+    }
+  }
+
+  .advantages__container {
+    @include page-wrapper;
+    padding-top: 60px;
+    padding-bottom: 53px;
+  }
+
+  .advantages__title {
+    width: 542px;
+    margin-bottom: 70px;
+    line-height: 114.8%;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 35px;
+  }
+
+  .advantages__item {
+    width: 540px;
+
+    &:nth-child(1) {
+      order: 1;
+      width: 540px;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+      width: 540px;
+    }
+
+    &:nth-child(3) {
+      order: 5;
+      width: 540px;
+    }
+
+    &:nth-child(4) {
+      order: 2;
+      width: 540px;
+    }
+
+    &:nth-child(5) {
+      order: 4;
+      width: 555px;
+    }
+  }
+
+  .advantages__img {
+    min-width: 55px;
+    height: 55px;
+
+    & svg {
+      width: 30px;
+      height: 30px;
+      fill: #6697c5;
+    }
+  }
+
+  .advantages__text {
+    margin-left: 33px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .advantages__title {
+    font-size: 50px;
+  }
+}

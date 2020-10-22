@@ -16,19 +16,26 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .title {
-    font-size: 60px;
-    line-height: 75px;
+    font-size: 50px;
+    line-height: 63px;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: 34px;
+      bottom: 29px;
       width: 77px;
       height: 2px;
       margin-left: 34px;
       background-color: $blue-color;
     }
+  }
+}
+
+@media (min-width: 1920px) {
+  .title {
+    font-size: 60px;
+    line-height: 75px;
   }
 }
