@@ -116,9 +116,10 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 191px;
-      height: 85px;
+      width: 195px;
+      height: 86px;
       background-image: url("../../img/beffore__dashed-2.svg");
+      background-size: contain;
     }
   }
 
@@ -181,9 +182,11 @@
 
 @media (min-width: 1200px) {
   .mission {
-    @include page-wrapper;
     padding-top: 95px;
     padding-bottom: 80px;
+    overflow: hidden;
+
+    @include page-wrapper;
   }
 
   .mission__label {
