@@ -1,0 +1,270 @@
+.mission {
+  padding: 35px 20px;
+  padding-bottom: 44px;
+  background-color: #f8fbff;
+}
+
+.mission__label {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 178.3%;
+  color: $blue-color;
+}
+
+.mission__title {
+  margin-bottom: 28px;
+}
+
+.mission__text {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 178.3%;
+}
+
+.mission__list {
+  @include list-reset;
+  margin-bottom: 45px;
+}
+
+.mission__item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.mission__img {
+  margin-bottom: 23px;
+  border-radius: 10px;
+}
+
+.mission__box {
+  display: flex;
+}
+
+.mission__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 37px;
+  height: 37px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 161.3%;
+  color: #ffffff;
+  background-color: $blue-color;
+  border-radius: 50%;
+}
+
+.mission__desc {
+  margin-left: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 158.3%;
+}
+
+.mission__inner {
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    top: -13px;
+    left: -25px;
+    z-index: 1;
+    width: 50px;
+    height: 89px;
+    background-image: url("../../img/about__before.svg");
+    background-position: top;
+  }
+}
+
+.mission__description {
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 24px 20px 29px 26px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 141.8%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 30px 70px rgba(102, 151, 197, 0.1);
+
+  & span {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .mission__label {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .mission__title {
+    position: relative;
+    margin-bottom: 40px;
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 191px;
+      height: 85px;
+      background-image: url("../../img/beffore__dashed-2.svg");
+    }
+  }
+
+  .mission__text {
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  .mission__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+
+  .mission__item {
+    width: 30%;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .mission__img {
+    margin-bottom: 45px;
+    background-color: #c4c4c4;
+    border-radius: 15px;
+  }
+
+  .mission__number {
+    min-width: 43px;
+    height: 43px;
+    font-size: 20px;
+  }
+
+  .mission__desc {
+    font-size: 16px;
+  }
+
+  .mission__inner {
+    &::before {
+      display: none;
+    }
+  }
+
+  .mission__description {
+    padding: 40px 78px 32px 58px;
+    font-size: 18px;
+    border: 1px dashed #0257a6;
+
+    & span {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .mission {
+    @include page-wrapper;
+    padding-top: 95px;
+    padding-bottom: 80px;
+  }
+
+  .mission__label {
+    margin-bottom: 16px;
+  }
+
+  .mission__title {
+    margin-bottom: 45px;
+
+    &::before {
+      top: -20px;
+      right: -22px;
+    }
+  }
+
+  .mission__item {
+    width: 370px;
+  }
+
+  .mission__desc {
+    margin-left: 28px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .mission {
+    padding-bottom: 104px;
+  }
+
+  .mission__title {
+    margin-bottom: 60px;
+
+
+    &::before {
+      top: -15px;
+      right: -150px;
+      width: 249px;
+      height: 110px;
+      background-size: contain;
+    }
+  }
+
+  .mission__text {
+    margin-bottom: 43px;
+    font-size: 25px;
+  }
+
+  .mission__list {
+    margin-bottom: 71px;
+  }
+
+  .mission__number {
+    min-width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  .mission__desc {
+    margin-left: 25px;
+    font-size: 18px;
+
+    &--three {
+      padding-right: 10px;
+    }
+  }
+
+  .mission__inner {
+    &::before {
+      @include pseudo;
+      position: absolute;
+      top: inherit;
+      bottom: -82px;
+      left: -288px;
+      width: 45px;
+      height: 180px;
+      background-image: url("../../img/beffore__dashed-3.svg");
+    }
+  }
+
+  .mission__description span:not(:last-child) {
+
+    margin-bottom: 30px;
+  }
+}

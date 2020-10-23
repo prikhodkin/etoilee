@@ -1,0 +1,41 @@
+.title {
+  position: relative;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+  color: #000000;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 14px;
+    width: 35px;
+    height: 1.5px;
+    margin-left: 14px;
+    background-color: #6697c5;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 50px;
+    line-height: 63px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 29px;
+      width: 77px;
+      height: 2px;
+      margin-left: 34px;
+      background-color: $blue-color;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .title {
+    font-size: 60px;
+    line-height: 75px;
+  }
+}

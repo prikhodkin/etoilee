@@ -1,0 +1,13 @@
+<svg width="41" height="180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="38" cy="141.6" r="2.8" transform="rotate(90 38 142)" fill="#0257A6"/>
+  <circle cx="38" cy="176.8" r="2.8" transform="rotate(90 38 177)" fill="#0257A6"/>
+  <circle cx="2.8" cy="141.6" r="2.8" transform="rotate(90 3 142)" fill="#0257A6"/>
+  <circle cx="2.8" cy="176.8" r="2.8" transform="rotate(90 3 177)" fill="#0257A6"/>
+  <circle cx="38" cy="71.5" r="2.8" transform="rotate(90 38 71)" fill="#0257A6"/>
+  <circle cx="38" cy="106.7" r="2.8" transform="rotate(90 38 107)" fill="#0257A6"/>
+  <circle cx="2.8" cy="71.5" r="2.8" transform="rotate(90 3 71)" fill="#0257A6"/>
+  <circle cx="2.8" cy="106.7" r="2.8" transform="rotate(90 3 107)" fill="#0257A6"/>
+  <circle cx="38" cy="38" r="2.8" transform="rotate(90 38 38)" fill="#0257A6"/>
+  <circle cx="2.8" cy="2.8" r="2.8" transform="rotate(90 3 3)" fill="#0257A6"/>
+  <circle cx="2.8" cy="38" r="2.8" transform="rotate(90 3 38)" fill="#0257A6"/>
+</svg>
