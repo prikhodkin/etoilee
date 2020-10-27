@@ -98,6 +98,14 @@
   font-size: 12px;
 }
 
+.promo__group {
+  display: none;
+}
+
+.promo__mouse {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .promo__title {
     max-width: inherit;
@@ -202,6 +210,7 @@
     position: absolute;
     top: 28%;
     left: 25px;
+    display: block;
     width: 193px;
   }
 

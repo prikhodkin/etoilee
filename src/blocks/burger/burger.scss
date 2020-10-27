@@ -63,16 +63,16 @@
 
 @media (min-width: 768px) {
   .burger {
-    width: 40px;
-    height: 36px;
+    width: 30px;
+    height: 26px;
 
     &::before,
     &::after {
-      width: 40px;
+      width: 30px;
     }
   }
 
   .burger__inner {
-    width: 35px;
+    width: 25px;
   }
 }

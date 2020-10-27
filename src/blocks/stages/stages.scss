@@ -1,0 +1,282 @@
+.stages {
+  padding: 33px 20px;
+  padding-bottom: 38px;
+}
+
+.stages__title {
+  font-size: 23px;
+  line-height: 29px;
+  margin-bottom: 18px;
+}
+
+.stages__desc {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 176.8%;
+  margin-bottom: 40px;
+  max-width: 97%;
+
+  & span {
+    font-weight: 500;
+  }
+}
+
+.stages__list {
+  @include list-reset;
+  margin-bottom: 45px;
+}
+
+.stages__item {
+  box-shadow: 0px 30px 70px rgba(110, 164, 216, 0.1);
+  border-radius: 10px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: -5px;
+  padding: 14px 20px;
+  padding-top: 17px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.stages__img {
+  min-width: 72px;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8FBFF;
+  border-radius: 50%;
+}
+
+.stages__icon {
+  width: 37px;
+  height: 37px;
+  fill: $blue-color;
+}
+
+.stages__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 167.8%;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.stages__number {
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 110.3%;
+  opacity: 0.05;
+  position: absolute;
+  top: 0;
+  left: -28px;
+  z-index: -1;
+
+  &--4 {
+    left: -43px;
+  }
+}
+
+.stages__description {
+  font-family: $fourth-font, sans-serif;
+  font-size: 12px;
+  line-height: 167.9%;
+  text-align: center;
+  color: #232323;
+}
+
+@media (min-width: 768px) {
+
+  .stages__title {
+    &::after {
+      bottom: 15px;
+    }
+  }
+
+  .stages__list {
+    padding: 0 10px;
+  }
+
+  .stages__item {
+    max-width: 446px;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &:not(:last-child)::before {
+      @include pseudo;
+      background-image: url("../../img/arrow__dashed.svg");
+      width: 200px;
+      height: 80px;
+      position: absolute;
+      bottom: -80px;
+      left: 40px;
+      background-size: contain;
+    }
+
+    &:nth-child(2n) {
+      margin-left: auto;
+
+      &::before {
+        transform: scaleX(-1);
+        right: 40px;
+        left: inherit;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .stages {
+    @include page-wrapper;
+    padding-top: 77px;
+    padding-bottom: 70px;
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      background-image: url("../../img/beffore__dashed-7.svg");
+      width: 250px;
+      height: 111px;
+      position: absolute;
+      right: 60px;
+      top: 205px;
+    }
+
+    &::after {
+      @include pseudo;
+      position: absolute;
+      bottom: -65px;
+      left: -120px;
+      width: 100px;
+      transform: rotate(90deg) scaleX(-1);
+      height: 237px;
+      background-image: url("../../img/beffore__dashed-3.svg");
+    }
+  }
+
+
+  .stages__title {
+    font-size: 50px;
+    line-height: 63px;
+    margin-bottom: 22px;
+
+    &::after {
+      bottom: 32px;
+    }
+  }
+
+  .stages__desc {
+    font-size: 14px;
+    line-height: 167.8%;
+    margin-bottom: 80px;
+    max-width: 750px;
+  }
+
+  .stages__list {
+    padding: 0 50px;
+    margin-bottom: 85px;
+  }
+
+  .stages__item {
+    padding: 22px 46px;
+    padding-top: 27px;
+
+    &:not(:last-child)::before {
+      width: 333px;
+      height: 131px;
+      bottom: -163px;
+      left: 180px;
+    }
+
+    &:nth-child(2n) {
+
+      &::before {
+        right: 240px;
+        left: inherit;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 57px;
+    }
+  }
+
+  .stages__img {
+    width: 117px;
+    min-width: 117px;
+    height: 117px;
+  }
+
+  .stages__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .stages__text {
+    margin-left: 40px;
+    font-size: 16px;
+  }
+
+  .stages__number {
+    font-size: 150px;
+    line-height: 167.8%;
+    top: -35px;
+    left: -60px;
+
+    &--1 {
+      left: -44px;
+    }
+
+    &--4 {
+      left: -65px;
+    }
+  }
+
+  .stages__description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .stages {
+    padding-top: 85px;
+    padding-bottom: 61px;
+
+    &::before {
+      right: 220px;
+      top: 215px;
+    }
+
+    &::after {
+      bottom: 60px;
+      left: 40px;
+    }
+  }
+
+  .stages__title {
+    font-size: 60px;
+    line-height: 75px;
+    margin-bottom: 30px;
+  }
+
+  .stages__desc {
+    font-size: 16px;
+    max-width: 778px;
+    margin-bottom: 70px;
+  }
+
+  .stages__description {
+    max-width: 730px;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+}
