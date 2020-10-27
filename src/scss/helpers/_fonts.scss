@@ -35,6 +35,10 @@
 }
 
 @font-face {
+  @include includeFont(700, $third-font, "OpenSans-Bold");
+}
+
+@font-face {
   @include includeFont(400, $fourth-font, "Brother1816-Regular");
 }
 
