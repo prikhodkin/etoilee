@@ -1,0 +1,60 @@
+.team {
+  background-color: #F8FBFF;
+  padding: 30px 20px;
+}
+
+.team__title {
+  margin-bottom: 30px;
+}
+
+.team__text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 176.8%;
+  margin-bottom: 40px;
+}
+
+.team__box {}
+
+.team__subtitle {
+  font-family: $third-font, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: $blue-color;
+}
+
+.team__list {
+  @include list-reset;
+  display: flex;
+}
+
+.team__item {
+  min-width: 229px;
+  padding: 20px;
+  padding-bottom: 30px;
+  background-color: #F8FBFF;
+  border-radius: 10px;
+
+  &:not(:first-child) {
+    margin-left: 45px;
+  }
+}
+
+.team__image {
+  background-color: #B9B9B9;
+  border-radius: 10px;
+  background-image: url("../../img/woman-avatar__icon.svg");
+}
+
+.team__img {}
+
+.team__name {}
+
+.team__position {}
+
+.team__desc {}
+
+.team__control {}
+
+.team__button {}

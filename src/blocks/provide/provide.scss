@@ -209,11 +209,12 @@
     &::before {
       @include pseudo;
       position: absolute;
-      top: 232px;
-      left: -21px;
-      width: 180px;
-      height: 43px;
-      background-image: url("../../img/beffore__dashed-5.svg");
+      top: 135px;
+      left: -3px;
+      width: 100px;
+      transform: rotate(90deg) scaleX(-1);
+      height: 237px;
+      background-image: url("../../img/beffore__dashed-3.svg");
     }
   }
 

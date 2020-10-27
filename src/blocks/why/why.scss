@@ -19,6 +19,8 @@
 .why__title {
   max-width: 80%;
   margin-bottom: 27px;
+  font-size: 22px;
+  line-height: 28px;
 }
 
 .why__inner {
@@ -87,6 +89,7 @@
   .why__title {
     max-width: 691px;
 
+
     &::after {
       bottom: 15px;
     }
@@ -135,6 +138,8 @@
 
   .why__title {
     margin-bottom: 60px;
+    font-size: 50px;
+    line-height: 63px;
 
     &::after {
       bottom: 30px;
@@ -186,5 +191,10 @@
       height: 70px;
       background-color: #f8fbff;
     }
+  }
+
+  .why__title {
+    font-size: 60px;
+    line-height: 75px;
   }
 }
