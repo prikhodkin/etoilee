@@ -1,0 +1,108 @@
+.company-card {
+  padding: 25px 20px;
+  padding-left: 26px;
+  border-radius: 10px;
+  box-shadow: 0 30px 70px rgba(110, 164, 216, 0.1);
+}
+
+.company-card__logo {
+  width: 58px;
+  height: 56px;
+  margin-bottom: 8px;
+}
+
+.company-card__name {
+  margin-bottom: 13px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 33px;
+  color: #313131;
+}
+
+.company-card__text {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  color: #313131;
+}
+
+.company-card__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company-card__item {
+  width: 64px;
+  height: 75px;
+  overflow: hidden;
+  background-color: #c4c4c4;
+  border-radius: 5px;
+
+  &:not(:first-child) {
+    margin-left: 17px;
+  }
+}
+
+.company-card__button {
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: $blue-color;
+  background-color: transparent;
+  border: none;
+}
+
+.company-card__img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 1200px) {
+  .company-card {
+    padding: 46px 39px 41px 48px;
+    border-radius: 20px;
+  }
+
+  .company-card__logo {
+    width: 78px;
+    height: 75px;
+    margin-bottom: 20px;
+  }
+
+  .company-card__name {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
+  .company-card__button {
+    display: none;
+  }
+
+  .company-card__text {
+    margin-bottom: 45px;
+    font-size: 16px;
+    line-height: 25px;
+
+    & span:not(:last-child) {
+      display: block;
+      margin-bottom: 25px;
+    }
+  }
+
+  .company-card__item {
+    width: 75px;
+    height: 88px;
+    border-radius: 10px;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    &:nth-child(2) {
+      margin-top: -10px;
+    }
+  }
+}
