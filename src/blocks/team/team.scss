@@ -1,7 +1,8 @@
 .team__container {
-  background-color: #F8FBFF;
   padding: 30px 20px;
+  padding-bottom: 39px;
   overflow: hidden;
+  background-color: #f8fbff;
 }
 
 .team__title {
@@ -9,15 +10,15 @@
 }
 
 .team__text {
+  width: 99%;
+  margin-bottom: 39px;
   font-weight: 300;
   font-size: 12px;
   line-height: 176.8%;
-  margin-bottom: 39px;
-  width: 99%;
 
   & span:not(:last-child) {
-    margin-bottom: 22px;
     display: block;
+    margin-bottom: 22px;
   }
 }
 
@@ -35,25 +36,25 @@
 
   &:nth-of-type(2)::before {
     @include pseudo;
-    background-image: url("../img/beffore__dashed-4.svg");
     position: absolute;
-    left: -30px;
     bottom: 110px;
+    left: -30px;
+    z-index: -1;
     width: 167px;
     height: 74px;
+    background-image: url("../img/beffore__dashed-4.svg");
     background-size: contain;
     transform: rotate(90deg);
-    z-index: -1;
   }
 }
 
 .team__subtitle {
-  font-family: $third-font, sans-serif;
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+  font-family: $third-font, sans-serif;
   color: $blue-color;
-  margin-bottom: 25px;
 }
 
 .team__list {
@@ -67,7 +68,7 @@
   min-width: 229px;
   padding: 20px;
   padding-bottom: 30px;
-  background-color: #F8FBFF;
+  background-color: #f8fbff;
   border-radius: 10px;
 
   &:not(:first-child) {
@@ -76,14 +77,14 @@
 }
 
 .team__image {
-  background-color: #B9B9B9;
-  border-radius: 10px;
+  display: flex;
+  align-items: center;
   width: 189px;
   height: 179px;
   margin-bottom: 20px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
+  background-color: #b9b9b9;
+  border-radius: 10px;
 }
 
 .team__img {
@@ -91,11 +92,11 @@
 }
 
 .team__name {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .team__position {
@@ -114,31 +115,31 @@
 }
 
 .team__button {
-  font-family: $third-font, sans-serif;
+  max-width: 217px;
+  min-height: 56px;
+  margin: 0 auto;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  font-family: $third-font, sans-serif;
   text-transform: inherit;
-  min-height: 56px;
-  max-width: 217px;
-  margin: 0 auto;
 }
 
 @media (min-width: 1200px) {
   .team__container {
     @include page-wrapper;
+    position: relative;
     padding-top: 65px;
     padding-bottom: 60px;
-    position: relative;
 
     &::before {
       @include pseudo;
-      background-image: url("../../img/beffore__dashed-4.svg");
-      width: 250px;
-      height: 191px;
       position: absolute;
       top: 45px;
       right: -65px;
+      width: 250px;
+      height: 191px;
+      background-image: url("../../img/beffore__dashed-4.svg");
     }
   }
 
@@ -147,8 +148,8 @@
   }
 
   .team__text {
-    font-size: 18px;
     max-width: 923px;
+    font-size: 18px;
 
     & span:not(:last-of-type) {
       margin-bottom: 35px;
@@ -177,9 +178,9 @@
   }
 
   .team__subtitle {
+    margin-bottom: 40px;
     font-size: 22px;
     line-height: 30px;
-    margin-bottom: 40px;
   }
 
   .team__list {
@@ -187,13 +188,13 @@
   }
 
   .team__item {
-    min-width: 310px;
+    position: relative;
     width: 310px;
-    border-radius: 20px;
+    min-width: 310px;
     padding: 27px 22px;
     padding-bottom: 28px;
     background-color: #ffffff;
-    position: relative;
+    border-radius: 20px;
 
 
     &:not(:first-child) {
@@ -201,13 +202,13 @@
     }
 
     &:hover {
-      box-shadow: 0px 30px 70px rgba(110, 164, 216, 0.1);
       margin-top: -10px;
+      box-shadow: 0 30px 70px rgba(110, 164, 216, 0.1);
     }
 
-    &:hover>.team__desc {
+    &:hover > .team__desc {
       display: block;
-      box-shadow: 0px 30px 70px rgba(110, 164, 216, 0.1);
+      box-shadow: 0 30px 70px rgba(110, 164, 216, 0.1);
     }
   }
 
@@ -215,7 +216,7 @@
     width: 100%;
     height: 252px;
     margin-bottom: 25px;
-    background-color: #F6FAFE;
+    background-color: #f6fafe;
     border-radius: 20px;
   }
 
@@ -230,21 +231,21 @@
   }
 
   .team__desc {
+    position: absolute;
+    bottom: -210px;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 30px;
+    padding-top: 25px;
+    font-weight: 300;
     font-size: 14px;
     line-height: 176.8%;
-    font-weight: 300;
-    display: none;
-    position: absolute;
     background-color: #ffffff;
     border-radius: 20px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    width: 100%;
-    left: 0;
-    bottom: -210px;
-    padding: 30px;
-    padding-top: 25px;
-    box-shadow: 0px 30px 70px rgba(110, 164, 216, 0.1);
+    box-shadow: 0 30px 70px rgba(110, 164, 216, 0.1);
   }
 
   .team__control {
@@ -264,30 +265,29 @@
 
     &::before {
       @include pseudo;
-      background-image: url("../../img/beffore__dashed-4.svg");
+      position: absolute;
+      bottom: 58px;
+      left: -48px;
+      z-index: 1000;
       width: 250px;
       height: 191px;
-      position: absolute;
+      background-image: url("../../img/beffore__dashed-4.svg");
       transform: rotate(90deg);
-      bottom: 58px;
-      z-index: 1000;
-      left: -48px;
     }
 
     &::after {
       @include pseudo;
+      position: absolute;
+      bottom: 58px;
+      left: 44px;
+      z-index: 1000;
       width: 110px;
       height: 230px;
-      bottom: 58px;
-      z-index: 1000;
-      left: 44px;
-      position: absolute;
       background-color: #ffffff;
     }
   }
 
   .team__container {
-
     &::before {
       right: 170px;
     }
