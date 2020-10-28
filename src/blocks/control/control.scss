@@ -24,7 +24,6 @@
     background-color: #ffffff;
     border: 1px solid #0257a6;
 
-
     & svg {
       transform: rotate(180deg);
       fill: $blue-color;
@@ -33,6 +32,23 @@
 
   &--forward {
     margin-left: 7px;
+  }
+
+  &--back-other {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+
+    & svg {
+      fill: #ffffff;
+    }
+  }
+
+  &--forward-other {
+    background-color: #ffffff;
+
+    & svg {
+      fill: $blue-color;
+    }
   }
 }
 

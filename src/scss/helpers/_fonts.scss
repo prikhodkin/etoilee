@@ -49,3 +49,7 @@
 @font-face {
   @include includeFont(500, $fifth-font, "Raleway-Medium");
 }
+
+@font-face {
+  @include includeFont(400, $sixth-font, "Gilroy-Regular");
+}
