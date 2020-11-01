@@ -1,0 +1,159 @@
+.contacts {
+  padding: 38px 37px;
+}
+
+.contacts__title {
+  margin-bottom: 5px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 142.43%;
+  text-align: center;
+  color: #191c1f;
+  text-transform: uppercase;
+
+  &::after {
+    display: none;
+  }
+}
+
+.contacts__text {
+  margin-bottom: 33px;
+  font-size: 14px;
+  line-height: 142.43%;
+  text-align: center;
+}
+
+.contacts__list {
+  @include list-reset;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 58px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 30px 70px rgba(110, 164, 216, 0.2);
+
+  & svg {
+    width: 22px;
+    height: 22px;
+    fill: $blue-color;
+  }
+}
+
+.contacts__box {
+  margin-left: 18px;
+}
+
+.contacts__name {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 142.43%;
+  color: #191c1f;
+}
+
+.contacts__desc {
+  font-size: 12px;
+  line-height: 142.43%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .contacts__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:not(:first-child) {
+      margin-left: 77px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts {
+    @include page-wrapper;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .contacts__title {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .contacts__text {
+    margin-bottom: 44px;
+    font-size: 16px;
+  }
+
+  .contacts__icon {
+    width: 68px;
+    height: 70px;
+
+    & svg {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  .contacts__box {
+    margin-left: 24px;
+  }
+
+  .contacts__name {
+    font-size: 20px;
+  }
+
+  .contacts__desc {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .contacts {
+    padding-top: 75px;
+    padding-bottom: 65px;
+  }
+
+  .contacts__title {
+    font-size: 35px;
+  }
+
+  .contacts__text {
+    margin-bottom: 53px;
+    font-size: 20px;
+  }
+
+  .contacts__icon {
+    width: 73px;
+    height: 76px;
+
+    & svg {
+      width: 29px;
+      height: 29px;
+    }
+  }
+
+  .contacts__name {
+    font-size: 22px;
+  }
+}

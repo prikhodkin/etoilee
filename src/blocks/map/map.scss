@@ -1,0 +1,139 @@
+.map {
+  position: relative;
+  padding: 38px 20px;
+  padding-bottom: 65px;
+  overflow: hidden;
+}
+
+.map__title {
+  margin-bottom: 25px;
+}
+
+.map__text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+  padding: 22px;
+  padding-bottom: 16px;
+  font-size: 13px;
+  line-height: 132.3%;
+  border: 1px solid $blue-color;
+  border-radius: 10px;
+
+  &::before {
+    @include pseudo;
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+    margin-right: 19px;
+    background-image: url("../../img/earth.svg");
+    background-size: contain;
+  }
+}
+
+.map__inner {
+  position: relative;
+}
+
+.map__img {
+  width: 1081px;
+  height: 465px;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+    fill: #f0f8ff;
+  }
+}
+
+.map__list {
+  @include list-reset;
+}
+
+.map__item {
+  position: absolute;
+  white-space: nowrap;
+}
+
+.map__wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 7px;
+    width: 0.68px;
+    height: calc(100% - 35px);
+    background-color: $blue-color;
+  }
+}
+
+.map__icon {
+  width: 13px;
+  height: 18px;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+    fill: $blue-color;
+  }
+}
+
+.map__name {
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.map__dot {
+  position: absolute;
+  bottom: 0;
+  left: 3.5px;
+  display: block;
+  width: 8.2px;
+  min-width: 8.2px;
+  height: 8.2px;
+  background-color: $blue-color;
+  border-radius: 50%;
+}
+
+@media (min-width: 1200px) {
+  .map {
+    padding: 0;
+    padding-top: 72px;
+  }
+
+  .map__title {
+    max-width: 680px;
+    margin-bottom: 0;
+  }
+
+  .map__box {
+    @include page-wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 230px;
+  }
+
+  .map__img {
+    padding-left: calc(50% - 665px);
+  }
+
+  .map__text {
+    max-width: 381px;
+    margin-bottom: 0;
+    padding: 30px 21px 25px 32px;
+    font-size: 16px;
+
+    &::before {
+      width: 46px;
+      min-width: 46px;
+      height: 46px;
+    }
+  }
+}
+
