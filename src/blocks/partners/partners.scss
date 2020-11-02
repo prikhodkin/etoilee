@@ -35,12 +35,13 @@
   }
 
   .partners__list {
-    margin: -20px -49px;
+    margin: -20px 0;
     padding-left: 0;
+    column-gap: 93px;
   }
 
   .partners__item {
-    margin: 20px 47px;
+    margin: 20px 0;
   }
 
   .partners__img {

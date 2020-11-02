@@ -27,27 +27,6 @@
   &::after {
     bottom: 0;
   }
-
-  &--active {
-    & .burger__inner {
-      display: none;
-    }
-
-    &::before,
-    &::after {
-      top: 50%;
-      background-color: #b3b3b3;
-      transform: translateY(-50%);
-    }
-
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-  }
 }
 
 .burger__inner {

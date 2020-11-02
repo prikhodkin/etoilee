@@ -7,6 +7,7 @@
   width: 100%;
   padding: 20px;
   padding-bottom: 40px;
+  transition: all 0.3s;
 
   &--trans {
     background-color: transparent;
@@ -19,6 +20,35 @@
   &--active .header__logo svg {
     fill: $blue-color;
   }
+
+  &--active .header__nav {
+    left: 0;
+    z-index: 9999;
+    display: block;
+    width: 100%;
+    transform: translateY(232px);
+  }
+
+  &--active .header__toggle {
+    & .burger__inner {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      top: 50%;
+      background-color: #b3b3b3;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .header__logo {
@@ -29,25 +59,12 @@
   }
 }
 
-@media (max-width: 1199px) {
-  .header__nav {
-    transition: all 0.3s;
-
-    &--close {
-      position: absolute;
-      transform: translateY(-1000px);
-    }
-
-    &--active {
-      position: absolute;
-      left: 0;
-      z-index: 9999;
-      display: block;
-      width: 100%;
-      transform: translateY(232px);
-    }
-  }
+.header__nav {
+  position: absolute;
+  transform: translateY(-1000px);
+  transition: all 0.3s;
 }
+
 
 @media (min-width: 1200px) {
   .header {

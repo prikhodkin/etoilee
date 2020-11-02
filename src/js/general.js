@@ -14,14 +14,12 @@ application.load(definitionsFromContext(context));
 
 //Открыть меню
 let toggleNav = document.querySelector(".header__toggle");
-let mainNav = document.querySelector(".header__nav");
+let header = document.querySelector(".header");
 
 toggleNav.addEventListener("click", function () {
-  if (mainNav.classList.contains("header__nav--close")) {
-    mainNav.classList.remove("header__nav--close");
-    mainNav.classList.add("header__nav--active");
+  if (header.classList.contains("header--active")) {
+    header.classList.remove("header--active");
   } else {
-    mainNav.classList.add("header__nav--close");
-    mainNav.classList.remove("header__nav--active");
+    header.classList.add("header--active");
   }
 });
