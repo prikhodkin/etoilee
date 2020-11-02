@@ -23,3 +23,17 @@ toggleNav.addEventListener("click", function () {
     header.classList.add("header--active");
   }
 });
+
+//Развернуть текст
+let companyCardButton = document.querySelector(".company-card__button");
+let companyCardText = document.querySelector(".company-card__text");
+
+companyCardButton.addEventListener("click", function () {
+  if (companyCardText.classList.contains("company-card__text--active")) {
+    companyCardText.classList.remove("company-card__text--active");
+  } else {
+    companyCardText.classList.add("company-card__text--active");
+  }
+});
+
+

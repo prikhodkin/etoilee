@@ -1,18 +1,27 @@
 .map {
   position: relative;
   padding: 38px 20px;
-  padding-bottom: 65px;
+  padding-bottom: 93px;
   overflow: hidden;
+
+  &--short {
+    background-color: $blue-color;
+  }
 }
 
 .map__title {
   margin-bottom: 25px;
+
+  &--short {
+    margin-bottom: 35px;
+  }
 }
 
-.map__text {
+.map__inner {
+  position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
   padding: 22px;
   padding-bottom: 16px;
   font-size: 13px;
@@ -20,24 +29,34 @@
   border: 1px solid $blue-color;
   border-radius: 10px;
 
-  &::before {
-    @include pseudo;
+  & svg {
     width: 35px;
     min-width: 35px;
     height: 35px;
     margin-right: 19px;
-    background-image: url("../../img/earth.svg");
-    background-size: contain;
   }
-}
 
-.map__inner {
-  position: relative;
+  &--short {
+    margin-bottom: 35px;
+    border-color: #ffffff;
+  }
+
+  &--short p {
+    color: #ffffff;
+  }
+
+  &--short svg {
+    fill: #ffffff;
+  }
 }
 
 .map__img {
   width: 1081px;
-  height: 465px;
+
+
+  &--short {
+    width: 881px;
+  }
 
   & svg {
     width: 100%;
@@ -72,13 +91,13 @@
     padding-left: calc(50% - 797px);
   }
 
-  .map__text {
+  .map__inner {
     max-width: 381px;
     margin-bottom: 0;
     padding: 30px 21px 25px 32px;
     font-size: 16px;
 
-    &::before {
+    & svg {
       width: 46px;
       min-width: 46px;
       height: 46px;
@@ -86,3 +105,38 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .map {
+    &--short {
+      padding-bottom: 67px;
+    }
+
+    &--short::before {
+      @include pseudo;
+      position: absolute;
+      top: 23px;
+      right: 139px;
+      width: 45px;
+      height: 110px;
+      background-image: url("../img/beffore__dashed-9.svg");
+    }
+
+    &--short::after {
+      @include pseudo;
+      position: absolute;
+      bottom: 28px;
+      left: -115px;
+      width: 250px;
+      height: 111px;
+      background-image: url("../img/beffore__dashed-8.svg");
+      background-size: contain;
+      transform: rotate(180deg);
+    }
+  }
+
+  .map__inner {
+    max-width: 410px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

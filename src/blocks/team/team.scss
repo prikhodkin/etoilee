@@ -20,6 +20,10 @@
     display: block;
     margin-bottom: 22px;
   }
+
+  &--short {
+    margin-bottom: 0;
+  }
 }
 
 .team__wrap {
@@ -153,6 +157,11 @@
 
     & span:not(:last-of-type) {
       margin-bottom: 35px;
+    }
+
+    &--short {
+      max-width: 1105px;
+      margin-bottom: 0;
     }
   }
 
@@ -293,6 +302,10 @@
     &::before {
       right: 170px;
     }
+
+    &--short {
+      padding-bottom: 71px;
+    }
   }
 
   .team__title {
@@ -301,5 +314,9 @@
 
   .team__text {
     margin-bottom: 60px;
+
+    &--short {
+      margin-bottom: 0;
+    }
   }
 }

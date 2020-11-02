@@ -1,8 +1,14 @@
 .consultation {
   display: flex;
   flex-direction: column;
-  padding: 31px 23px 42px 25px;
+  padding: 31px 23px 34px 25px;
   background-color: #f8fbff;
+
+  &--short {
+    padding-top: 43px;
+    padding-bottom: 43px;
+    background-color: #ffffff;
+  }
 }
 
 .consultation__title {
@@ -110,13 +116,20 @@
   .consultation {
     padding-top: 35px;
     padding-bottom: 45px;
+
+    &--short {
+      padding-top: 95px;
+      padding-bottom: 65px;
+    }
   }
 
   .consultation__box {
+    width: 530px;
+    min-width: 530px;
     padding-top: 50px;
   }
 
   .consultation__images {
-    margin-left: 120px;
+    margin-left: 75px;
   }
 }

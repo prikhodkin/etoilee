@@ -2,6 +2,10 @@
   padding: 40px 20px;
   padding-bottom: 45px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  &--short {
+    background-color: #f8fbff;
+  }
 }
 
 .security__title {
@@ -103,6 +107,10 @@
     @include page-wrapper;
     padding-top: 61px;
     padding-bottom: 52px;
+
+    &--short {
+      border: none;
+    }
   }
 
   .security__title {

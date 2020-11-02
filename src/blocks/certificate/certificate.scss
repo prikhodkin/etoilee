@@ -40,10 +40,9 @@
       position: absolute;
       bottom: 20px;
       left: 102px;
-      width: 52px;
-      height: 180px;
-      background-image: url("../../img/beffore__dashed-3.svg");
-      transform: scaleX(-1);
+      width: 53px;
+      height: 182px;
+      background-image: url("../../img/beffore__dashed-1.svg");
     }
 
     &::after {
@@ -85,6 +84,12 @@
     &::after {
       top: 136px;
       right: -60px;
+    }
+
+    &--short::before {
+      @include pseudo;
+      bottom: 76px;
+      left: 108px;
     }
   }
 
