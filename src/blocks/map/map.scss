@@ -83,12 +83,16 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 85px;
+
+    &--short {
+      margin-bottom: 73px;
+    }
   }
 
   .map__img {
-    width: 91%;
+    width: 96%;
     height: auto;
-    padding-left: calc(50% - 797px);
+    padding-left: calc(50% - 665px);
   }
 
   .map__inner {
@@ -108,7 +112,7 @@
 @media (min-width: 1920px) {
   .map {
     &--short {
-      padding-bottom: 67px;
+      padding-bottom: 83px;
     }
 
     &--short::before {
@@ -138,5 +142,14 @@
     max-width: 410px;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .map__img {
+    width: 91%;
+    padding-left: calc(50% - 798px);
+
+    &--short {
+      padding-left: calc(50% - 793px);
+    }
   }
 }

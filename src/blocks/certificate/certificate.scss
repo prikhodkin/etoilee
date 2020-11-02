@@ -35,6 +35,10 @@
 
     @include page-wrapper;
 
+    &--short {
+      padding-bottom: 70px;
+    }
+
     &::before {
       @include pseudo;
       position: absolute;

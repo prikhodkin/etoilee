@@ -66,13 +66,14 @@
 @media (min-width: 1200px) {
   .consultation {
     flex-direction: row;
-    padding: 100px 0;
+    padding-top: 106px;
+    padding-bottom: 100px;
     padding-left: calc(50% - 585px);
   }
 
   .consultation__box {
-    width: 481px;
-    min-width: 481px;
+    width: 530px;
+    min-width: 530px;
     padding-top: 25px;
   }
 
@@ -94,7 +95,7 @@
   .consultation__images {
     order: inherit;
     margin-bottom: 0;
-    margin-left: 81px;
+    margin-left: 32px;
   }
 
   .consultation__list {
