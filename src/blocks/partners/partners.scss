@@ -9,21 +9,19 @@
 
 .partners__list {
   @include list-reset;
-  display: grid;
-  grid-column-gap: 29px;
-  grid-row-gap: 23px;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -14px -19.5px;
   padding-left: 7px;
+}
+
+.partners__item {
+  margin: 14px 19.5px;
 }
 
 .partners__img {
   width: 63px;
-}
-
-@media (min-width: 768px) {
-  .partners__list {
-    grid-template-columns: repeat(7, 1fr);
-  }
 }
 
 @media (min-width: 1200px) {
@@ -37,9 +35,12 @@
   }
 
   .partners__list {
-    grid-column-gap: 94px;
-    grid-row-gap: 30px;
+    margin: -20px -49px;
     padding-left: 0;
+  }
+
+  .partners__item {
+    margin: 20px 47px;
   }
 
   .partners__img {
