@@ -1,0 +1,93 @@
+.cookies {
+  display: none;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.cookies__content {
+  margin-bottom: 40px;
+}
+
+.cookies__title {
+  font-size: 18px;
+  line-height: 32.09px;
+
+  &::after {
+    display: none;
+  }
+}
+
+.cookies__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24.96px;
+}
+
+.cookies__box {
+  display: flex;
+  justify-content: center;
+}
+
+.cookies__button {
+  width: 131px;
+  height: 47px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+
+  &:last-child {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cookies {
+    display: flex;
+    align-items: center;
+  }
+
+  .cookies__content {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .cookies__box {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cookies {
+    @include page-wrapper;
+    position: relative;
+    padding-top: 27px;
+    padding-bottom: 22px;
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      bottom: 15px;
+      left: 17px;
+      width: 112px;
+      height: 42px;
+      background-image: url("../../img/beffore__dashed-10.svg");
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      @include pseudo;
+      position: absolute;
+      top: 15px;
+      right: 17px;
+      width: 112px;
+      height: 42px;
+      background-image: url("../../img/beffore__dashed-10.svg");
+    }
+  }
+
+  .cookies__button {
+    width: 151px;
+    height: 57px;
+  }
+}
