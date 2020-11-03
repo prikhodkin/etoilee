@@ -17,7 +17,7 @@
 }
 
 .partners__item {
-  margin: 14px 19.5px;
+  margin: 12px 19.5px;
 }
 
 .partners__img {
@@ -28,19 +28,28 @@
   .partners {
     @include page-wrapper;
     padding-top: 93px;
+
+    &--short {
+      padding-top: 60px;
+    }
   }
 
   .partners__title {
     margin-bottom: 60px;
+
+    &--short {
+      margin-bottom: 73px;
+    }
   }
 
   .partners__list {
-    margin: -20px -49px;
+    margin: -20px 0;
     padding-left: 0;
+    column-gap: 93px;
   }
 
   .partners__item {
-    margin: 20px 47px;
+    margin: 20px 0;
   }
 
   .partners__img {
@@ -71,6 +80,10 @@
       width: 30px;
       height: 30px;
       background-color: #ffffff;
+    }
+
+    &--short::before {
+      display: none;
     }
   }
 }

@@ -1,4 +1,5 @@
 .mission {
+  position: relative;
   padding: 35px 20px;
   padding-bottom: 44px;
   background-color: #f8fbff;
@@ -102,15 +103,7 @@
 }
 
 @media (min-width: 768px) {
-  .mission__label {
-    margin-bottom: 30px;
-    font-size: 20px;
-  }
-
-  .mission__title {
-    position: relative;
-    margin-bottom: 40px;
-
+  .mission {
     &::before {
       @include pseudo;
       position: absolute;
@@ -121,6 +114,16 @@
       background-image: url("../../img/beffore__dashed-2.svg");
       background-size: contain;
     }
+  }
+
+  .mission__label {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .mission__title {
+    position: relative;
+    margin-bottom: 40px;
   }
 
   .mission__text {
@@ -187,6 +190,11 @@
     overflow: hidden;
 
     @include page-wrapper;
+
+    &::before {
+      top: 125px;
+      right: 190px;
+    }
   }
 
   .mission__label {
@@ -195,11 +203,6 @@
 
   .mission__title {
     margin-bottom: 45px;
-
-    &::before {
-      top: -20px;
-      right: -22px;
-    }
   }
 
   .mission__item {
@@ -214,19 +217,18 @@
 @media (min-width: 1920px) {
   .mission {
     padding-bottom: 104px;
-  }
-
-  .mission__title {
-    margin-bottom: 60px;
-
 
     &::before {
-      top: -15px;
-      right: -150px;
+      top: 188px;
+      right: 435px;
       width: 249px;
       height: 110px;
       background-size: contain;
     }
+  }
+
+  .mission__title {
+    margin-bottom: 60px;
   }
 
   .mission__text {

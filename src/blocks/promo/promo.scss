@@ -9,6 +9,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
@@ -20,6 +21,9 @@
 }
 
 .promo__item {
+  position: relative;
+  height: 96px;
+
   &:not(:last-child) {
     margin-bottom: 11px;
   }
@@ -49,14 +53,27 @@
   }
 }
 
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
 .promo__sublist {
   @include list-reset;
   display: flex;
   line-height: 0;
+  position: absolute;
+  animation: marquee 40s linear infinite;
 }
 
 .promo__subitem {
   margin-left: 10px;
+  float: left;
 }
 
 .promo__img {
@@ -117,6 +134,10 @@
     transform: translateX(-50%);
   }
 
+  .promo__item {
+    height: 162px;
+  }
+
   .promo__img {
     width: 290px;
   }
@@ -141,6 +162,8 @@
   }
 
   .promo__item {
+    height: 256px;
+
     &:not(:last-child) {
       margin-bottom: 31px;
     }

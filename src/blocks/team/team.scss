@@ -20,6 +20,10 @@
     display: block;
     margin-bottom: 22px;
   }
+
+  &--short {
+    margin-bottom: 0;
+  }
 }
 
 .team__wrap {
@@ -154,6 +158,11 @@
     & span:not(:last-of-type) {
       margin-bottom: 35px;
     }
+
+    &--short {
+      max-width: 1105px;
+      margin-bottom: 0;
+    }
   }
 
   .team__wrap {
@@ -195,6 +204,7 @@
     padding-bottom: 28px;
     background-color: #ffffff;
     border-radius: 20px;
+    transition: all 0.3s;
 
 
     &:not(:first-child) {
@@ -237,7 +247,7 @@
     display: none;
     width: 100%;
     padding: 30px;
-    padding-top: 25px;
+    padding-top: 18px;
     font-weight: 300;
     font-size: 14px;
     line-height: 176.8%;
@@ -246,6 +256,7 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0 30px 70px rgba(110, 164, 216, 0.1);
+    transition: all 0.3s;
   }
 
   .team__control {
@@ -291,6 +302,10 @@
     &::before {
       right: 170px;
     }
+
+    &--short {
+      padding-bottom: 71px;
+    }
   }
 
   .team__title {
@@ -299,5 +314,9 @@
 
   .team__text {
     margin-bottom: 60px;
+
+    &--short {
+      margin-bottom: 0;
+    }
   }
 }
