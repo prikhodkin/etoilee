@@ -50,6 +50,25 @@
       fill: $blue-color;
     }
   }
+
+  &--square {
+    width: 50px;
+    height: 44px;
+    margin: 0;
+    background-color: $blue-color;
+    border-radius: inherit;
+
+    & svg {
+      width: 16px;
+      fill: #ffffff;
+    }
+
+    &:nth-child(2) {
+      margin-left: -1px;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0 20px 0 0;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -64,6 +83,19 @@
 
     &--forward {
       margin-left: 10px;
+    }
+
+    &--square {
+      width: 70px;
+      height: 64px;
+      margin: 0;
+      background-color: $blue-color;
+      border-radius: inherit;
+
+      & svg {
+        width: 26px;
+        fill: #ffffff;
+      }
     }
   }
 }
