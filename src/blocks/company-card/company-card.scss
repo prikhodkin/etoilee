@@ -20,7 +20,7 @@
 }
 
 .company-card__text {
-  height: 155px;
+  max-height: 155px;
   margin-bottom: 20px;
   overflow: hidden;
   font-weight: 300;
@@ -30,7 +30,7 @@
   transition: all 0.3s;
 
   &--active {
-    height: auto;
+    max-height: auto;
     transition: all 0.3s;
   }
 
