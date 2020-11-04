@@ -85,6 +85,36 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .certificate {
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      bottom: 20px;
+      left: 40px;
+      width: 53px;
+      height: 182px;
+      background-image: url("../../img/beffore__dashed-1.svg");
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .certificate {
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      bottom: 20px;
+      left: 102px;
+      width: 53px;
+      height: 182px;
+      background-image: url("../../img/beffore__dashed-1.svg");
+    }
+  }
+}
+
 @media (min-width: 1920px) {
   .certificate {
     padding-top: 87px;
