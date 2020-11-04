@@ -5,6 +5,7 @@ const modal = document.querySelector(`.cookies`);
 
 export const initialCookieModal = () => {
   const isFirst = getCookie('is_first');
+  console.log(document.cookie)
 
   if (!isFirst) {
     addIsFirstInfo()

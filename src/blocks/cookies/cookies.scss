@@ -10,7 +10,7 @@
   box-shadow: 0 0 70px rgba(110, 164, 216, 0.1);
 
   &--hidden {
-    display: none;
+    display: none !important;
   }
 }
 
