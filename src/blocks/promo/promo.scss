@@ -22,15 +22,13 @@
 
 .promo__slider {
   width: 200%;
-  height: auto;
+  height: 100%;
 }
 
 .promo__item {
   position: relative;
+  height: 96px;
 
-  img {
-    display: block;
-  }
 
   .promo__slider {
     position: absolute;
@@ -78,6 +76,7 @@
 .promo__slide {
   float: left;
   width: 50%;
+  height: 100%;
 }
 
 .promo__subitem {
@@ -85,6 +84,11 @@
   flex-grow: 1;
   margin-left: 10px;
   border-radius: 10px;
+  height: 100%;
+
+  &:nth-child(n + 3) {
+    display: none;
+  }
 
   picture {
     flex-grow: 1;
@@ -93,7 +97,7 @@
 
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     border-radius: 10px;
     object-fit: cover;
@@ -153,6 +157,10 @@
     width: 60%;
     transform: translateX(-50%);
   }
+
+  .promo__item {
+    height: 180px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -175,6 +183,7 @@
 
 
   .promo__item {
+    height: 257px;
     &:not(:last-child) {
       margin-bottom: 31px;
     }
@@ -182,6 +191,10 @@
 
   .promo__subitem {
     margin-left: 27px;
+
+    &:nth-child(n + 3) {
+      display: flex;
+    }
   }
 
 

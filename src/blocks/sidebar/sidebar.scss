@@ -1,29 +1,49 @@
+.sidebar {
+  display: none;
+}
+
 .sidebar__group {
   @include list-reset;
-  position: absolute;
-  top: 28%;
-  left: 25px;
   display: block;
   width: 193px;
 }
 
 .sidebar__element {
-  font-size: 12px;
-  line-height: 16px;
-  font-family: $fifth-font;
-  color: #ffffff;
-  opacity: 0.71;
+
 
   &:not(:last-child) {
     margin-bottom: 30px;
   }
 
-  &--current {
-    font-weight: 500;
-    opacity: 1;
+  a {
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $fifth-font;
+    color: #ffffff;
+    opacity: 0.71;
+    &.active {
+      font-weight: 500;
+      opacity: 1;
+    }
   }
 
-  &--dark {
-    color: #000000;
+
+}
+
+
+@media (min-width: 1700px) {
+  .sidebar {
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--dark {
+      a {
+        color: #000000;
+      }
+    }
   }
 }
