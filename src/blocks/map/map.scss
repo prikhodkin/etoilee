@@ -51,8 +51,13 @@
 }
 
 .map__img {
-  width: 1081px;
+  position: relative;
+  overflow-y: hidden;
 
+
+  img {
+    width: 1081px;
+  }
 
   &--short {
     width: 881px;
@@ -90,9 +95,8 @@
   }
 
   .map__img {
-    width: 96%;
-    height: auto;
-    padding-left: calc(50% - 665px);
+    @include page-wrapper;
+    width: 100%;
   }
 
   .map__inner {
@@ -142,14 +146,5 @@
     max-width: 410px;
     font-size: 18px;
     line-height: 24px;
-  }
-
-  .map__img {
-    width: 91%;
-    padding-left: calc(50% - 798px);
-
-    &--short {
-      padding-left: calc(50% - 793px);
-    }
   }
 }

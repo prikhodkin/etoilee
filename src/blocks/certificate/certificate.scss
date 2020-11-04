@@ -1,6 +1,6 @@
 .certificate {
   position: relative;
-  padding: 25px 20px;
+  padding: 25px 0;
   padding-bottom: 40px;
   overflow: hidden;
 }
@@ -8,6 +8,8 @@
 .certificate__title {
   max-width: 90%;
   margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .certificate__list {
@@ -17,11 +19,7 @@
 }
 
 .certificate__item {
-  min-width: 100%;
-
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
+  margin: 20px;
 }
 
 .certificate__control {
@@ -35,8 +33,20 @@
 
     @include page-wrapper;
 
+
     &--short {
       padding-bottom: 70px;
+    }
+
+    .certificate__item {
+      margin: 15px;
+    }
+
+    .certificate__title {
+      padding: 0;
+    }
+
+    .certificate__list {
     }
 
     &::before {
@@ -65,8 +75,7 @@
   }
 
   .certificate__item {
-    width: 570px;
-    min-width: 570px;
+
   }
 
   .certificate__control {

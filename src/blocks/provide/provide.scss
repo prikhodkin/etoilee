@@ -32,16 +32,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 100%;
-
-  &:not(:first-child) {
-    margin-left: 20px;
-  }
 }
 
 .provade__img {
   width: 187px;
   height: 179px;
+  margin: 0 auto;
   padding: 28px 50px;
   padding-top: 35px;
   background-color: #f8fbff;
@@ -94,12 +90,20 @@
   }
 
   .provide__item {
-    flex-direction: row;
-    max-width: 1065px;
+    margin: 50px 0;
+  }
+
+  .provide__inner {
+    display: flex;
+    align-items: center;
   }
 
   .provide__title {
     max-width: 380px;
+  }
+
+  .provade__img {
+    margin: 0;
   }
 
   .provide__box {
@@ -113,20 +117,22 @@
 
 @media (min-width: 1200px) {
   .provide__container {
-    @include page-wrapper;
     position: relative;
+    padding: 0;
     padding-top: 72px;
     padding-bottom: 86px;
   }
 
   .provide__label {
     margin-bottom: 17px;
+    margin-left: calc(50% - 585px);
     font-size: 20px;
   }
 
   .provide__title {
     max-width: 816px;
     margin-bottom: 50px;
+    margin-left: calc(50% - 585px);
     font-size: 40px;
     line-height: 129.3%;
 
@@ -138,16 +144,12 @@
 
   .provide__list {
     margin-bottom: 0;
-    padding-left: 58px;
   }
 
   .provide__item {
     position: relative;
-    min-width: 1065px;
+    margin: 60px;
 
-    &:not(:first-child) {
-      margin-left: 124px;
-    }
 
     &::before {
       @include pseudo;

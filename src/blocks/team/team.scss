@@ -65,19 +65,13 @@
   @include list-reset;
   display: flex;
   margin-bottom: 25px;
-  padding-left: 25px;
 }
 
 .team__item {
-  min-width: 229px;
   padding: 20px;
   padding-bottom: 30px;
   background-color: #f8fbff;
   border-radius: 10px;
-
-  &:not(:first-child) {
-    margin-left: 25px;
-  }
 }
 
 .team__image {
@@ -85,6 +79,7 @@
   align-items: center;
   width: 189px;
   height: 179px;
+  margin: 0 auto;
   margin-bottom: 20px;
   overflow: hidden;
   background-color: #b9b9b9;
