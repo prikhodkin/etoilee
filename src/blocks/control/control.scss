@@ -9,25 +9,32 @@
   align-items: center;
   width: 45px;
   height: 45px;
-  background-color: $blue-color;
-  border: none;
+  background-color: #ffffff;
+  border: 1px solid #0257a6;
   border-radius: 50%;
   appearance: none;
   cursor: pointer;
+  transition: all 0.3s;
 
   & svg {
     width: 19px;
     height: 15px;
-    fill: #ffffff;
+    fill: $blue-color;
+  }
+
+  &:hover {
+    background-color: $blue-color;
+    border: none;
+
+    & svg {
+      fill: #ffffff;
+    }
   }
 
   &--back {
-    background-color: #ffffff;
-    border: 1px solid #0257a6;
 
     & svg {
       transform: rotate(180deg);
-      fill: $blue-color;
     }
   }
 
