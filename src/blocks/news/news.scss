@@ -128,11 +128,7 @@
     }
 
     &::after {
-      bottom: 28px;
-      left: -115px;
-      width: 250px;
-      height: 111px;
-      background-size: contain;
+      display: none;
     }
   }
 
@@ -169,5 +165,19 @@
 
   .news__control {
     display: none;
+  }
+}
+
+@media (min-width: 1470px) {
+  .news {
+
+    &::after {
+      display: block;
+      bottom: 28px;
+      left: -115px;
+      width: 250px;
+      height: 111px;
+      background-size: contain;
+    }
   }
 }
