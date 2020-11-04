@@ -1,0 +1,35 @@
+.politic {
+  padding: 0 15px;
+  display: none;
+  position: absolute;
+  width: 100%;
+
+  &--active {
+    display: block
+  }
+
+  &.active {
+    display: block;
+  }
+}
+
+.politic__wrapper {
+  position: relative;
+  padding: 30px;
+  background-color: white;
+  min-height: 200px;
+  z-index: 100;
+  border-radius: 20px;
+}
+
+.politic__title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media(min-width: 768px) {
+  .politic__wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
