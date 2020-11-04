@@ -30,7 +30,7 @@
   transition: all 0.3s;
 
   &--active {
-    max-height: auto;
+    max-height: inherit;
     transition: all 0.3s;
   }
 
