@@ -31,22 +31,12 @@
 @media (min-width: 1200px) {
   .certificate {
     padding-top: 70px;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
 
     @include page-wrapper;
 
     &--short {
       padding-bottom: 70px;
-    }
-
-    &::before {
-      @include pseudo;
-      position: absolute;
-      bottom: 20px;
-      left: 102px;
-      width: 53px;
-      height: 182px;
-      background-image: url("../../img/beffore__dashed-1.svg");
     }
 
     &::after {
@@ -64,6 +54,10 @@
     margin-bottom: 66px;
   }
 
+  .certificate__list {
+    margin-bottom: 0;
+  }
+
   .certificate__item {
     width: 570px;
     min-width: 570px;
@@ -73,6 +67,36 @@
     position: absolute;
     top: 70px;
     right: 210px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .certificate {
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      bottom: 20px;
+      left: 40px;
+      width: 53px;
+      height: 182px;
+      background-image: url("../../img/beffore__dashed-1.svg");
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .certificate {
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      bottom: 20px;
+      left: 102px;
+      width: 53px;
+      height: 182px;
+      background-image: url("../../img/beffore__dashed-1.svg");
+    }
   }
 }
 
