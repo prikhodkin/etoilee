@@ -229,35 +229,7 @@
 }
 
 @media (min-width: 1920px) {
-  .promo__group {
-    @include list-reset;
-    position: absolute;
-    top: 28%;
-    left: 25px;
-    display: block;
-    width: 193px;
-  }
 
-  .promo__element {
-    font-size: 12px;
-    line-height: 16px;
-    font-family: $fifth-font;
-    color: #ffffff;
-    opacity: 0.71;
-
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-
-    &--current {
-      font-weight: 500;
-      opacity: 1;
-    }
-
-    &--dark {
-      color: #000000;
-    }
-  }
 
   .promo__item {
     &:not(:last-child) {
