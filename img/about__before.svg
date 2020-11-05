@@ -1,0 +1,26 @@
+<svg width="60" height="98" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="58" cy="39.5" r="1.5" transform="rotate(90 58 39)" fill="#6697C5"/>
+  <circle cx="58" cy="58.5" r="1.5" transform="rotate(90 58 59)" fill="#6697C5"/>
+  <circle cx="58" cy="76.9" r="1.5" transform="rotate(90 58 77)" fill="#6697C5"/>
+  <circle cx="58" cy="96" r="1.5" transform="rotate(90 58 96)" fill="#6697C5"/>
+  <circle cx="39" cy="39.5" r="1.5" transform="rotate(90 39 39)" fill="#6697C5"/>
+  <circle cx="39" cy="58.5" r="1.5" transform="rotate(90 39 59)" fill="#6697C5"/>
+  <circle cx="39" cy="76.9" r="1.5" transform="rotate(90 39 77)" fill="#6697C5"/>
+  <circle cx="39" cy="96" r="1.5" transform="rotate(90 39 96)" fill="#6697C5"/>
+  <circle cx="20.6" cy="39.5" r="1.5" transform="rotate(90 21 39)" fill="#6697C5"/>
+  <circle cx="20.6" cy="58.5" r="1.5" transform="rotate(90 21 59)" fill="#6697C5"/>
+  <circle cx="20.6" cy="76.9" r="1.5" transform="rotate(90 21 77)" fill="#6697C5"/>
+  <circle cx="20.6" cy="96" r="1.5" transform="rotate(90 21 96)" fill="#6697C5"/>
+  <circle cx="1.5" cy="39.5" r="1.5" transform="rotate(90 2 39)" fill="#6697C5"/>
+  <circle cx="1.5" cy="58.5" r="1.5" transform="rotate(90 2 59)" fill="#6697C5"/>
+  <circle cx="1.5" cy="76.9" r="1.5" transform="rotate(90 2 77)" fill="#6697C5"/>
+  <circle cx="1.5" cy="96" r="1.5" transform="rotate(90 2 96)" fill="#6697C5"/>
+  <circle cx="58" cy="1.5" r="1.5" transform="rotate(90 58 2)" fill="#6697C5"/>
+  <circle cx="58" cy="20.6" r="1.5" transform="rotate(90 58 21)" fill="#6697C5"/>
+  <circle cx="39" cy="1.5" r="1.5" transform="rotate(90 39 2)" fill="#6697C5"/>
+  <circle cx="39" cy="20.6" r="1.5" transform="rotate(90 39 21)" fill="#6697C5"/>
+  <circle cx="20.6" cy="1.5" r="1.5" transform="rotate(90 21 2)" fill="#6697C5"/>
+  <circle cx="20.6" cy="20.6" r="1.5" transform="rotate(90 21 21)" fill="#6697C5"/>
+  <circle cx="1.5" cy="1.5" r="1.5" transform="rotate(90 2 2)" fill="#6697C5"/>
+  <circle cx="1.5" cy="20.6" r="1.5" transform="rotate(90 2 21)" fill="#6697C5"/>
+</svg>

@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Gulp v4.1</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" data-mce-href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" data-mce-href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" data-mce-href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" data-mce-href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" data-mce-href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" data-mce-href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32" data-mce-href="/favicon-32x32.png">
+<link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192" data-mce-href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96" data-mce-href="/favicon-96x96.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16" data-mce-href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="img/favicons//mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="preload" href="fonts/Geometria-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Geometria-Bold.woff2" as="font" crossorigin>
+  <script src="js/vendor.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+  <header class="header">
+    <a class="header__logo logo">
+      <svg>
+        <use xlink:href="img/sprites/sprite.svg#logo__icon"></use>
+      </svg>
+    </a>
+    <button class="header__toggle burger">
+      <span class="burger__inner"><span class="visually-hidden">Открыть меню</span></span>
+    </button>
+    <nav class="header__nav header__nav--close nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#" >About us</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" >About us</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" >About us</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" >About us</a></li>
+      </ul>
+      <a class="nav__button button" href="#">get a certificate</a>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Entreprise étoilée</h1>
+    <section id="1" class="promo active">
+      <div class="promo__box">
+        <h2 class="promo__title title">Valorisez Vos Actions Sociales</h2>
+        <p class="promo__text">Notre organisation a pour but de soutenir les entreprises et entrepreneurs dans leurs actions positives en faveur de l’intérêt général et de l’économie solidaire.</p>
+        <a class="promo__button button button--grad" href="#">get a certificate</a>
+      </div>
+      <div class="promo__mouse">Для полее подробной информации листайте вниз</div>
+      <ul class="promo__list">
+        <li class="promo__item ">
+          <div class="promo__slider">
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-1-img-1@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-1-img-1@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-1-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-1-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-1-img-2@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-1-img-2@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-1-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-1-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-1-img-3@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-1-img-3@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-1-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-1-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-1-img-4@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-1-img-4@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-1-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-1-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-1-img-1@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-1-img-1@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-1-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-1-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-1-img-2@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-1-img-2@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-1-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-1-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-1-img-3@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-1-img-3@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-1-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-1-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-1-img-4@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-1-img-4@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-1-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-1-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="promo__item ">
+          <div class="promo__slider">
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-2-img-1@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-2-img-1@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-2-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-2-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-2-img-2@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-2-img-2@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-2-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-2-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-2-img-3@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-2-img-3@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-2-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-2-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-2-img-4@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-2-img-4@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-2-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-2-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-2-img-1@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-2-img-1@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-2-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-2-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-2-img-2@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-2-img-2@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-2-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-2-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-2-img-3@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-2-img-3@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-2-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-2-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-2-img-4@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-2-img-4@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-2-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-2-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="promo__item ">
+          <div class="promo__slider">
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-3-img-1@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-3-img-1@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-3-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-3-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-3-img-2@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-3-img-2@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-3-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-3-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-3-img-3@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-3-img-3@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-3-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-3-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-3-img-4@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-3-img-4@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-3-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-3-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-3-img-1@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-3-img-1@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-3-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-3-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-3-img-2@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-3-img-2@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-3-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-3-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-3-img-3@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-3-img-3@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-3-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-3-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo__column-3-img-4@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/promo__column-3-img-4@desktop.png">
+                    <source type="image/webp" srcset="img/promo__column-3-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-3-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="promo__item ">
+          <div class="promo__slider">
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-4-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-4-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-4-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-4-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-4-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-4-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-4-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-4-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-4-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-4-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-4-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-4-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-4-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-4-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-4-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-4-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="promo__item ">
+          <div class="promo__slider">
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-5-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-5-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-5-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-5-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-5-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-5-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-5-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-5-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-5-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-5-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-5-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-5-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-5-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-5-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-5-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-5-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="promo__item ">
+          <div class="promo__slider">
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-6-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-6-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-6-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-6-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-6-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-6-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-6-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-6-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+            <div class="promo__slide">
+              <ul class="promo__sublist">
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-6-img-1.webp">
+                    <img class="promo__img" src="img/promo__column-6-img-1.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-6-img-2.webp">
+                    <img class="promo__img" src="img/promo__column-6-img-2.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-6-img-3.webp">
+                    <img class="promo__img" src="img/promo__column-6-img-3.png" alt="">
+                  </picture>
+                </li>
+                <li class="promo__subitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo__column-6-img-4.webp">
+                    <img class="promo__img" src="img/promo__column-6-img-4.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="2" class="about-us">
+      <div class="about-us__box">
+        <h2 class="about-us__title title">À propos de nous</h2>
+        <p class="about-us__text">Notre organisation a pour but de soutenir les entreprises et entrepreneurs dans leurs actions positives en faveur de l’intérêt général et de l’économie solidaire. On a mobilisé plus de 35 experts qualifiés en France et à l’international afin de vous apporter la garantie de votre maîtrise de la sécurité et de la qualité de vos opérations quotidiennes auprès des principaux clients européens.</p>
+        <div class="about-us__logo logo">
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#logo__icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="about-us__image">
+        <picture>
+          <source media="(min-width: 1200px)" type="image/webp" srcset="img/about__img@desktop.webp">
+          <source media="(min-width: 1200px)" srcset="img/about__img@desktop.jpg">
+          <source type="image/webp" srcset="img/about__img@mobile.webp">
+          <img class="about-us__img" src="img/about__img@mobile.jpg" alt="">
+        </picture>
+      </div>
+    </section>
+    <section id="3" class="mission">
+      <p class="mission__label">Le label</p>
+      <h2 class="mission__title title">Entreprise étoilée</h2>
+      <p class="mission__text">Faire partie des entreprise étoilées c'est:</p>
+      <ul class="mission__list">
+        <li class="mission__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/mission-1@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/mission-1@desktop.jpg">
+            <source type="image/webp" srcset="img/mission-1@mobile.webp">
+            <img class="mission__img" src="img/mission-1@mobile.jpg" alt="">
+          </picture>
+          <div class="mission__box">
+            <p class="mission__number">1</p>
+            <p class="mission__desc">Valoriser vos engagements financiers de solidarité aux yeux de vos partenaires et de vos clients</p>
+          </div>
+        </li>
+        <li class="mission__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/mission-2@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/mission-2@desktop.jpg">
+            <source type="image/webp" srcset="img/mission-2@mobile.webp">
+            <img class="mission__img" src="img/mission-2@mobile.jpg" alt="">
+          </picture>
+          <div class="mission__box">
+            <p class="mission__number">2</p>
+            <p class="mission__desc">Prendre part à une communauté active de  dirigeants<br>/responsables partageant les mêmes valeurs en adhérant à l'association des « Entreprises Etoilées »</p>
+          </div>
+        </li>
+        <li class="mission__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/mission-3@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/mission-3@desktop.jpg">
+            <source type="image/webp" srcset="img/mission-3@mobile.webp">
+            <img class="mission__img" src="img/mission-3@mobile.jpg" alt="">
+          </picture>
+          <div class="mission__box">
+            <p class="mission__number">3</p>
+            <p class="mission__desc mission__desc--three">Renforcer les liens entre le monde de l'entreprise et la société civile</p>
+          </div>
+        </li>
+      </ul>
+      <div class="mission__inner">
+        <p class="mission__description"><span>Les « entreprises étoilées » forment ainsi un réseau d'entraides et une plateforme d'échanges entre entrepreneurs.</span> <span>Plusieurs évènements sont organisées durant l'année afin de réunir cette communauté.</span> </p>
+      </div>
+    </section>
+    <section id="4" class="advantages">
+      <div class="advantages__container">
+        <h2 class="advantages__title title">Les avantages de cette certification</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__img">
+              <svg>
+                <use  xlink:href="img/sprites/sprite.svg#atom__icon"></use>
+              </svg>
+            </div>
+            <p class="advantages__text">Faire reconnaître la fiabilité de vos processus et La qualité <span>de vos ressources biologiques par Les acteurs de La recherche</span> , du secteur pharmaceutique et de l'éducation:</p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__img">
+              <svg>
+                <use  xlink:href="img/sprites/sprite.svg#shuffle__icon"></use>
+              </svg>
+            </div>
+            <p class="advantages__text"><span>Faciliter vos échanges avec d'autres CRB.</span> </p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__img">
+              <svg>
+                <use  xlink:href="img/sprites/sprite.svg#shield__icon"></use>
+              </svg>
+            </div>
+            <p class="advantages__text"><span>Sécuriser vos pratiques</span>  et maîtriser Les risques associés:</p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__img">
+              <svg>
+                <use  xlink:href="img/sprites/sprite.svg#check__icon"></use>
+              </svg>
+            </div>
+            <p class="advantages__text"><span>Faire partie du réseau des CRB </span> certifiés par un organisme reconnu et indépendant:</p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__img">
+              <svg>
+                <use  xlink:href="img/sprites/sprite.svg#verified-user__icon"></use>
+              </svg>
+            </div>
+            <p class="advantages__text"><span>Répondre aux exigences des parties prenantes (les patients</span>  et Les donneurs de ressources biologiques humaines, Les fournisseurs de ressources biologiques microbiennes, l'initiateur de la collection ..)</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="5" class="provide" data-controller="slider-one">
+      <div class="provide__container">
+        <p class="provide__label">Étiquettes</p>
+        <h2 class="provide__title title">Quelles étiquettes pouvons-nous fournir et ce qu'elles signifient</h2>
+        <ul class="provide__list" data-target="slider-one.list">
+          <li class="provide__item">
+            <div class="provide__inner">
+              <div class="provade__img">
+                <svg>
+                  <use  xlink:href="img/sprites/sprite.svg#star__icon"></use>
+                </svg>
+              </div>
+              <div class="provide__box">
+                <p class="provide__subtitle title">Заголовок какой-то</p>
+                <p class="provide__text">Notre <span>organisation a pour but de soutenir les</span>  entreprises et entrepreneurs dans leurs actions positives en faveur de l’intérêt général et de <span>l’économie solidaire</span> . On a mobilisé plus de 35 experts qualifiés en France et à l’international afin de vous apporter la garantie de votre <span>maîtrise de la sécurité et de la qualité de vos opérations</span>  quotidiennes auprès des principaux clients européens.</p>
+              </div>
+            </div>
+          </li>
+          <li class="provide__item">
+            <div class="provide__inner">
+              <div class="provade__img">
+                <svg>
+                  <use  xlink:href="img/sprites/sprite.svg#star__icon"></use>
+                </svg>
+              </div>
+              <div class="provide__box">
+                <p class="provide__subtitle title">Заголовок какой-то</p>
+                <p class="provide__text">Notre <span>organisation a pour but de soutenir les</span>  entreprises et entrepreneurs dans leurs actions positives en faveur de l’intérêt général et de <span>l’économie solidaire</span> . On a mobilisé plus de 35 experts qualifiés en France et à l’international afin de vous apporter la garantie de votre <span>maîtrise de la sécurité et de la qualité de vos opérations</span>  quotidiennes auprès des principaux clients européens.</p>
+              </div>
+            </div>
+          </li>
+          <li class="provide__item">
+            <div class="provide__inner">
+              <div class="provade__img">
+                <svg>
+                  <use  xlink:href="img/sprites/sprite.svg#star__icon"></use>
+                </svg>
+              </div>
+              <div class="provide__box">
+                <p class="provide__subtitle title">Заголовок какой-то</p>
+                <p class="provide__text">Notre <span>organisation a pour but de soutenir les</span>  entreprises et entrepreneurs dans leurs actions positives en faveur de l’intérêt général et de <span>l’économie solidaire</span> . On a mobilisé plus de 35 experts qualifiés en France et à l’international afin de vous apporter la garantie de votre <span>maîtrise de la sécurité et de la qualité de vos opérations</span>  quotidiennes auprès des principaux clients européens.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="provide__control control">
+          <button data-target="slider-one.prev" class="control__button control__button--back">
+            <svg>
+              <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+            </svg>
+          </button>
+          <button data-target="slider-one.next" class="control__button control__button--forward">
+            <svg>
+              <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="more">
+  <h2 class="more__title title">Terminer le processus de certification en ligne</h2>
+  <a class="more__button button" href="#" >Obtenir un certificat</a>
+</section>
+
+    <section id="6" class="why">
+      <h2 class="why__title title">Pourquoi choiris afnor certification?</h2>
+      <div class="why__box">
+        <div class="why__inner">
+          <p class="why__name">Une expertise et un savoir-faire inégalé en audit:</p>
+          <ul class="why__list">
+            <li class="why__item"><p class="why__text">Un programme d'audit adapté à vos enjeux et vos risques, s'appuyant sur une méthodologie d'audit éprouvée et très axé terrain pour s'assurer de la maîtrise de vos activités et de l'atteinte de vos objectifs.</p> </li>
+            <li class="why__item"><p class="why__text">Un savoir-faire inédit de l'audit, couplé à la valeur ajoutée <br> de nos auditeurs et à Leur approche de l'audit</p> </li>
+          </ul>
+        </div>
+        <div class="why__inner">
+          <p class="why__name">S'engager avec Le leader de la certification:</p>
+          <ul class="why__list">
+            <li class="why__item"><p class="why__text">La notoriété du leader français de la certification avec plus <br> de 70 000 sites certifiés en France et à l'international et une expérience en certification de plus de 20 ans</p> </li>
+            <li class="why__item"><p class="why__text">La proximité de 13 implantations régionales et une présence dans plus de 100 pays facilitent le déploiement de vos démarches en France et dans le monde <br> entier</p> </li>
+            <li class="why__item"><p class="why__text">Un réseau de 1800 auditeurs qualifiés et certifiés pour leurs compétences d'audit dans votre secteur d'activité</p> </li>
+            <li class="why__item"><p class="why__text">Confiance numérique, service public</p> </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="7" class="stages">
+      <h2 class="stages__title title">Délivrance du label</h2>
+      <p class="stages__desc">L'entreprise souhaitant recevoir l'appellation <span>«entreprise étoilée»</span>  et ainsi être labellisée doit suivre le programme d'audit des engagements financiers. Ce programme est déterminé par le comité d'éthique et mis en œuvre par les experts de la Société Française du Capital Responsable. Il se décline selon les étapes suivantes:</p>
+      <ul class="stages__list">
+        <li class="stages__item">
+          <div class="stages__img">
+            <svg class="stages__icon">
+              <use  xlink:href="img/sprites/sprite.svg#boss__icon"></use>
+            </svg>
+          </div>
+          <p class="stages__text">sollicitation <br> de l'entreprise candidate</p>
+          <p class="stages__number stages__number--1">1</p>
+        </li>
+        <li class="stages__item">
+          <div class="stages__img">
+            <svg class="stages__icon">
+              <use  xlink:href="img/sprites/sprite.svg#paper__icon"></use>
+            </svg>
+          </div>
+          <p class="stages__text">recueil et analyse des justificatifs d'engagements financiers</p>
+          <p class="stages__number stages__number--2">2</p>
+        </li>
+        <li class="stages__item">
+          <div class="stages__img">
+            <svg class="stages__icon">
+              <use  xlink:href="img/sprites/sprite.svg#interview__icon"></use>
+            </svg>
+          </div>
+          <p class="stages__text">Entretien <br> avec les <br> dirigeants</p>
+          <p class="stages__number stages__number--3">3</p>
+        </li>
+        <li class="stages__item">
+          <div class="stages__img">
+            <svg class="stages__icon">
+              <use  xlink:href="img/sprites/sprite.svg#coaching__icon"></use>
+            </svg>
+          </div>
+          <p class="stages__text">Presentation des conclusion</p>
+          <p class="stages__number stages__number--4">4</p>
+        </li>
+        <li class="stages__item">
+          <div class="stages__img">
+            <svg class="stages__icon">
+              <use  xlink:href="img/sprites/sprite.svg#logo-img__icon"></use>
+            </svg>
+          </div>
+          <p class="stages__text">deliverance dulabel</p>
+          <p class="stages__number stages__number--5">5</p>
+        </li>
+      </ul>
+      <p class="stages__description">L'audit n'a pas vocation à sanctionner définitivement une entreprise <br> quel qu'elle soit mais l'accompagner et soutenir celle-ci en vue de l'obtention du label <br> et de sa volonté de s'engager financièrement à l'amélioration de la société.</p>
+    </section>
+    <section class="more">
+  <h2 class="more__title title">Terminer le processus de certification en ligne</h2>
+  <a class="more__button button" href="#" >Obtenir un certificat</a>
+</section>
+
+    <section id="8" class="team">
+      <div class="team__container">
+        <h2 class="team__title title">Notre équipe</h2>
+        <p class="team__text"><span>Grâce a un système de comparaison poussé des conditions bancaires, nous identifions la solution la plus pertinente en termes de prix et de faisabilité en fonction de votre profil et de votre projet.</span> <span>Nos experts vous accompagnent à chaque étape du projet et négocie les conditions pour nos clients.</span></p>
+        <div class="team__wrap">
+          <div class="team__box" data-controller="slider-fixed">
+            <p class="team__subtitle">Предстаавители общ орг</p>
+            <ul class="team__list" data-target="slider-fixed.list">
+              <li class="team__item">
+                <div class="team__image">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/team__img-man@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/team__img-man@desktop.jpg">
+                    <source type="image/webp" srcset="img/team__img-man@mobile.webp">
+                    <img class="team__img" src="img/team__img-man@mobile.jpg" alt="">
+                  </picture>
+                </div>
+                <p class="team__name">Фамилия Имя</p>
+                <p class="team__position">Менеджер</p>
+                <p class="team__desc">Grâce a un système de comparaison poussé des conditions bancaires, nous identifions la solution la plus pertinente en termes de prix et de faisabilité en fonction de votre profil et de votre projet. Grâce a un système de comparaison poussé des conditions bancaires, nous.</p>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <img class="team__img" src="img/woman-avatar__icon.svg" width="130" height="130" alt="">
+                </div>
+                <p class="team__name">Фамилия Имя</p>
+                <p class="team__position">Менеджер</p>
+                <p class="team__desc">Grâce a un système de comparaison poussé des conditions bancaires, nous identifions la solution la plus pertinente en termes de prix et de faisabilité en fonction de votre profil et de votre projet. Grâce a un système de comparaison poussé des conditions bancaires, nous.</p>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/team__img-woman@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/team__img-woman@desktop.jpg">
+                    <source type="image/webp" srcset="img/team__img-woman@desktop.webp">
+                    <img class="team__img" src="img/team__img-woman@desktop.jpg" alt="">
+                  </picture>
+                </div>
+                <p class="team__name">Фамилия Имя</p>
+                <p class="team__position">Менеджер</p>
+                <p class="team__desc">Grâce a un système de comparaison poussé des conditions bancaires, nous identifions la solution la plus pertinente en termes de prix et de faisabilité en fonction de votre profil et de votre projet. Grâce a un système de comparaison poussé des conditions bancaires, nous.</p>
+              </li>
+            </ul>
+            <div class="team__control control">
+              <button data-target="slider-fixed.prev" class="control__button control__button--back">
+                <svg>
+                  <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+                </svg>
+              </button>
+              <button data-target="slider-fixed.next" class="control__button control__button--forward">
+                <svg>
+                  <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="team__box" data-controller="slider-fixed">
+            <p class="team__subtitle">Предс частного сектора</p>
+            <ul class="team__list" data-target="slider-fixed.list">
+              <li class="team__item">
+                <div class="team__image">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/team__img-woman@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/team__img-woman@desktop.jpg">
+                    <source type="image/webp" srcset="img/team__img-woman@desktop.webp">
+                    <img class="team__img" src="img/team__img-woman@desktop.jpg" alt="">
+                  </picture>
+                </div>
+                <p class="team__name">Фамилия Имя</p>
+                <p class="team__position">Менеджер</p>
+                <p class="team__desc">Grâce a un système de comparaison poussé des conditions bancaires, nous identifions la solution la plus pertinente en termes de prix et de faisabilité en fonction de votre profil et de votre projet. Grâce a un système de comparaison poussé des conditions bancaires, nous.</p>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/team__img-man@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/team__img-man@desktop.jpg">
+                    <source type="image/webp" srcset="img/team__img-man@mobile.webp">
+                    <img class="team__img" src="img/team__img-man@mobile.jpg" alt="">
+                  </picture>
+                </div>
+                <p class="team__name">Фамилия Имя</p>
+                <p class="team__position">Менеджер</p>
+                <p class="team__desc">Grâce a un système de comparaison poussé des conditions bancaires, nous identifions la solution la plus pertinente en termes de prix et de faisabilité en fonction de votre profil et de votre projet. Grâce a un système de comparaison poussé des conditions bancaires, nous.</p>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <img class="team__img" src="img/man-avatar__icon.svg" width="130" height="130" alt="">
+                </div>
+                <p class="team__name">Фамилия Имя</p>
+                <p class="team__position">Менеджер</p>
+                <p class="team__desc">Grâce a un système de comparaison poussé des conditions bancaires, nous identifions la solution la plus pertinente en termes de prix et de faisabilité en fonction de votre profil et de votre projet. Grâce a un système de comparaison poussé des conditions bancaires, nous.</p>
+              </li>
+            </ul>
+            <div class="team__control control">
+              <button data-target="slider-fixed.prev" class="control__button control__button--back">
+                <svg>
+                  <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+                </svg>
+              </button>
+              <button data-target="slider-fixed.next" class="control__button control__button--forward">
+                <svg>
+                  <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="team__box" data-controller="slider-fixed">
+            <p class="team__subtitle">Предс частного сектора</p>
+            <ul class="team__list" data-target="slider-fixed.list">
+              <li class="team__item">
+                <div class="team__image">
+                  <img class="team__img" src="img/man-avatar__icon.svg" width="130" height="130" alt="">
+                </div>
+                <p class="team__name">Фамилия Имя</p>
+                <p class="team__position">Менеджер</p>
+                <p class="team__desc">Grâce a un système de comparaison poussé des conditions bancaires, nous identifions la solution la plus pertinente en termes de prix et de faisabilité en fonction de votre profil et de votre projet. Grâce a un système de comparaison poussé des conditions bancaires, nous.</p>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/team__img-woman2@desktop.webp">
+                    <source media="(min-width: 1200px)" srcset="img/team__img-woman2@desktop.jpg">
+                    <source type="image/webp" srcset="img/team__img-woman2@desktop.webp">
+                    <img class="team__img" src="img/team__img-woman2@desktop.jpg" alt="">
+                  </picture>
+                </div>
+                <p class="team__name">Фамилия Имя</p>
+                <p class="team__position">Менеджер</p>
+                <p class="team__desc">Grâce a un système de comparaison poussé des conditions bancaires, nous identifions la solution la plus pertinente en termes de prix et de faisabilité en fonction de votre profil et de votre projet. Grâce a un système de comparaison poussé des conditions bancaires, nous.</p>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <img class="team__img" src="img/woman-avatar__icon.svg" width="130" height="130" alt="">
+                </div>
+                <p class="team__name">Фамилия Имя</p>
+                <p class="team__position">Менеджер</p>
+                <p class="team__desc">Grâce a un système de comparaison poussé des conditions bancaires, nous identifions la solution la plus pertinente en termes de prix et de faisabilité en fonction de votre profil et de votre projet. Grâce a un système de comparaison poussé des conditions bancaires, nous.</p>
+              </li>
+            </ul>
+            <div class="team__control control">
+              <button data-target="slider-fixed.prev" class="control__button control__button--back">
+                <svg>
+                  <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+                </svg>
+              </button>
+              <button data-target="slider-fixed.next" class="control__button control__button--forward">
+                <svg>
+                  <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <a class="team__button button button--grad" href="#" >Contacter</a>
+      </div>
+    </section>
+    <section class="partners">
+      <h2 class="partners__title title">Les partenaires</h2>
+      <ul class="partners__list">
+        <li class="partners__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/partner__img@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/partner__img@desktop.jpg">
+            <source type="image/webp" srcset="img/partner__img.webp">
+            <img class="partners__img" src="img/partner__img.jpg" alt="">
+          </picture>
+        </li>
+        <li class="partners__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/partner__img@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/partner__img@desktop.jpg">
+            <source type="image/webp" srcset="img/partner__img.webp">
+            <img class="partners__img" src="img/partner__img.jpg" alt="">
+          </picture>
+        </li>
+        <li class="partners__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/partner__img@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/partner__img@desktop.jpg">
+            <source type="image/webp" srcset="img/partner__img.webp">
+            <img class="partners__img" src="img/partner__img.jpg" alt="">
+          </picture>
+        </li>
+        <li class="partners__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/partner__img@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/partner__img@desktop.jpg">
+            <source type="image/webp" srcset="img/partner__img.webp">
+            <img class="partners__img" src="img/partner__img.jpg" alt="">
+          </picture>
+        </li>
+        <li class="partners__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/partner__img@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/partner__img@desktop.jpg">
+            <source type="image/webp" srcset="img/partner__img.webp">
+            <img class="partners__img" src="img/partner__img.jpg" alt="">
+          </picture>
+        </li>
+        <li class="partners__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/partner__img@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/partner__img@desktop.jpg">
+            <source type="image/webp" srcset="img/partner__img.webp">
+            <img class="partners__img" src="img/partner__img.jpg" alt="">
+          </picture>
+        </li>
+        <li class="partners__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/partner__img@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/partner__img@desktop.jpg">
+            <source type="image/webp" srcset="img/partner__img.webp">
+            <img class="partners__img" src="img/partner__img.jpg" alt="">
+          </picture>
+        </li>
+        <li class="partners__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/partner__img@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/partner__img@desktop.jpg">
+            <source type="image/webp" srcset="img/partner__img.webp">
+            <img class="partners__img" src="img/partner__img.jpg" alt="">
+          </picture>
+        </li>
+        <li class="partners__item">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/partner__img@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/partner__img@desktop.jpg">
+            <source type="image/webp" srcset="img/partner__img.webp">
+            <img class="partners__img" src="img/partner__img.jpg" alt="">
+          </picture>
+        </li>
+      </ul>
+    </section>
+    <section class="certificate" data-controller="slider-two">
+      <h2 class="certificate__title title">Ils ont déjà le certificat</h2>
+      <ul class="certificate__list" data-target="slider-two.list">
+        <li class="certificate__item company-card">
+          <div class="company-card__logo">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/ars__logo@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/ars__logo@desktop.png">
+              <source type="image/webp" srcset="img/ars__logo@mobile.webp">
+              <img class="company-card__img" src="img/ars__logo@mobile.png" alt="">
+            </picture>
+          </div>
+          <p class="company-card__name">Название компании</p>
+          <p class="company-card__text"><span>Обеспечено полное договорное сопровождение деятельности, включая ведение делопроизводства, полное юридическое обеспечение таких мероприятий, как «Новая Волна-2011/2012». Обеспечено полное договорное сопровождение деятельности, включая ведение делопроизводства, полное юридическое обеспечение таких мероприятий, как «Новая Волна-2011/2012».</span>  <span>Обеспечено полное договорное сопровождение деятельности, включая ведение делопроизводства, полное юридическое обеспечение таких мероприятий, как «Новая Волна-2011/2012»</span></p>
+          <button class="company-card__button">Развернуть</button>
+          <ul class="company-card__list">
+            <li class="company-card__item">
+              <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/team__img-woman@desktop.webp">
+                <source media="(min-width: 1200px)" srcset="img/team__img-woman@desktop.jpg">
+                <source type="image/webp" srcset="img/team__img-woman@desktop.webp">
+                <img class="company-card__img" src="img/team__img-woman@desktop.jpg" alt="">
+              </picture>
+            </li>
+            <li class="company-card__item">
+              <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/team__img-woman2@desktop.webp">
+                <source media="(min-width: 1200px)" srcset="img/team__img-woman2@desktop.jpg">
+                <source type="image/webp" srcset="img/team__img-woman2@desktop.webp">
+                <img class="company-card__img" src="img/team__img-woman2@desktop.jpg" alt="">
+              </picture>
+            </li>
+            <li class="company-card__item">
+              <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/team__img-man@desktop.webp">
+                <source media="(min-width: 1200px)" srcset="img/team__img-man@desktop.jpg">
+                <source type="image/webp" srcset="img/team__img-man@mobile.webp">
+                <img class="company-card__img" src="img/team__img-man@mobile.jpg" alt="">
+              </picture>
+            </li>
+          </ul>
+        </li>
+        <li class="certificate__item company-card">
+          <div class="company-card__logo">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/ars__logo@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/ars__logo@desktop.png">
+              <source type="image/webp" srcset="img/ars__logo@mobile.webp">
+              <img class="company-card__img" src="img/ars__logo@mobile.png" alt="">
+            </picture>
+          </div>
+          <p class="company-card__name">Название компании</p>
+          <p class="company-card__text">Обеспечено полное договорное сопровождение деятельности, включая ведение делопроизводства, полное юридическое обеспечение таких мероприятий, как «Новая Волна-2011/2012». Обеспечено полное договорное сопровождение деятельности, включая ведение делопроизводства, полное юридическое обеспечение таких мероприятий, как «Новая Волна-2011/2012». </p>
+        </li>
+        <li class="certificate__item company-card">
+          <div class="company-card__logo">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/ars__logo@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/ars__logo@desktop.png">
+              <source type="image/webp" srcset="img/ars__logo@mobile.webp">
+              <img class="company-card__img" src="img/ars__logo@mobile.png" alt="">
+            </picture>
+          </div>
+          <p class="company-card__name">Название компании</p>
+          <p class="company-card__text">Обеспечено полное договорное сопровождение деятельности, включая ведение делопроизводства, полное юридическое обеспечение таких мероприятий, как «Новая Волна-2011/2012». Обеспечено полное договорное сопровождение деятельности, включая ведение делопроизводства, полное юридическое обеспечение таких мероприятий, как «Новая Волна-2011/2012». </p>
+        </li>
+      </ul>
+      <div class="certificate__control control">
+        <button data-target="slider-two.prev" class="control__button control__button--back">
+          <svg>
+            <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+          </svg>
+        </button>
+        <button data-target="slider-two.next" class="control__button control__button--forward">
+          <svg>
+            <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="news" data-controller="slider-fixed">
+      <h2 class="news__title title">Nouvelles</h2>
+      <p class="news__text">L'entreprise souhaitant recevoir l'appellation <span>«entreprise étoilée»</span>  et ainsi être labellisée doit suivre le programme d'audit des engagements financiers. Ce programme.</p>
+      <ul class="news__list" data-target="slider-fixed.list">
+        <li class="news__item">
+          <div class="news__image">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/news__img-1@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/news__img-1@desktop.jpg">
+              <source type="image/webp" srcset="img/news__img-1.webp">
+              <img class="news__img" src="img/news__img-1.jpg" alt="">
+            </picture>
+          </div>
+          <p class="news__name">Правовые экспертизы</p>
+          <a class="news__link" href="#">Подробнее</a>
+        </li>
+        <li class="news__item">
+          <div class="news__image">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/news__img-1@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/news__img-1@desktop.jpg">
+              <source type="image/webp" srcset="img/news__img-1.webp">
+              <img class="news__img" src="img/news__img-1.jpg" alt="">
+            </picture>
+          </div>
+          <p class="news__name">Правовые экспертизы</p>
+          <a class="news__link" href="#">Подробнее</a>
+        </li>
+        <li class="news__item">
+          <div class="news__image">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/news__img-1@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/news__img-1@desktop.jpg">
+              <source type="image/webp" srcset="img/news__img-1.webp">
+              <img class="news__img" src="img/news__img-1.jpg" alt="">
+            </picture>
+          </div>
+          <p class="news__name">Правовые экспертизы</p>
+          <a class="news__link" href="#">Подробнее</a>
+        </li>
+      </ul>
+      <div class="news__control control">
+        <button data-target="slider-fixed.prev" class="control__button control__button--back control__button--back-other">
+          <svg>
+            <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+          </svg>
+        </button>
+        <button data-target="slider-fixed.next" class="control__button control__button--forward control__button--forward-other">
+          <svg>
+            <use  xlink:href="img/sprites/sprite.svg#arrow__icon"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="map" data-controller="scroll">
+      <div class="map__box">
+        <h2 class="map__title title">Membres de notre communauté</h2>
+        <div class="map__inner">
+          <svg>
+            <use  xlink:href="img/sprites/sprite.svg#earth__icon"></use>
+          </svg>
+          <p>Тут какой-то текст, что они есть в любой части света</p>
+        </div>
+      </div>
+      <div class="map__img" data-target="scroll.item">
+        <img src="img/map.svg" alt="">
+      </div>
+    </section>
+    <section class="consultation">
+      <div class="consultation__box">
+        <h2 class="consultation__title title">Vous cherchez un prêt immobilier ou souhaitez renégocier? </h2>
+        <p class="consultation__text">Que vous achetiez ou refinanciez une propriété, nos conseillers en prêts immobiliers expérimentés sont disponibles 24 heures sur  24 pour vous aider</p>
+        <a class="consultation__button button button--grad" href="#" >Simuler mon prêt</a>
+      </div>
+      <div class="consultation__images">
+        <ul class="consultation__list list-img">
+          <li class="list-img__item">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/consultation__img-1@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/consultation__img-1@desktop.jpg">
+              <source type="image/webp" srcset="img/consultation__img-1@mobile.webp">
+              <img class="list-img__img" src="img/consultation__img-1@mobile.jpg" alt="">
+            </picture>
+          </li>
+          <li class="list-img__item">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/consultation__img-2@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/consultation__img-2@desktop.jpg">
+              <source type="image/webp" srcset="img/consultation__img-2@mobile.webp">
+              <img class="list-img__img" src="img/consultation__img-2@mobile.jpg" alt="">
+            </picture>
+          </li>
+          <li class="list-img__item">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/consultation__img-3@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/consultation__img-3@desktop.jpg">
+              <source type="image/webp" srcset="img/consultation__img-3@mobile.webp">
+              <img class="list-img__img" src="img/consultation__img-3@mobile.jpg" alt="">
+            </picture>
+          </li>
+        </ul>
+        <ul class="consultation__list list-img">
+          <li class="list-img__item">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/consultation__img-4@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/consultation__img-4@desktop.jpg">
+              <source type="image/webp" srcset="img/consultation__img-4@mobile.webp">
+              <img class="list-img__img" src="img/consultation__img-4@mobile.jpg" alt="">
+            </picture>
+          </li>
+          <li class="list-img__item">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/consultation__img-1@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/consultation__img-1@desktop.jpg">
+              <source type="image/webp" srcset="img/consultation__img-1@mobile.webp">
+              <img class="list-img__img" src="img/consultation__img-1@mobile.jpg" alt="">
+            </picture>
+          </li>
+          <li class="list-img__item">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/consultation__img-2@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/consultation__img-2@desktop.jpg">
+              <source type="image/webp" srcset="img/consultation__img-2@mobile.webp">
+              <img class="list-img__img" src="img/consultation__img-2@mobile.jpg" alt="">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title title">As-tu besoin d'aide?</h2>
+      <p class="contacts__text">Nous sommes là pour vous!</p>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <div class="contacts__icon">
+            <svg>
+              <use  xlink:href="img/sprites/sprite.svg#phone-call__icon"></use>
+            </svg>
+          </div>
+          <div class="contacts__box">
+            <p class="contacts__name">+2 599 424-43-53</p>
+            <p class="contacts__desc">Lun - Ven de 8h a 18h</p>
+          </div>
+        </li>
+        <li class="contacts__item">
+          <div class="contacts__icon">
+            <svg>
+              <use  xlink:href="img/sprites/sprite.svg#at__icon"></use>
+            </svg>
+          </div>
+          <div class="contacts__box">
+            <p class="contacts__name">service@berlin.de</p>
+            <p class="contacts__desc">Nous répondons sous 1 heure</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="security">
+      <h2 class="security__title title">Nous pensons et nous engageons pour votre sécurité</h2>
+      <ul class="security__list">
+        <li class="security__item">
+          <div class="security__img security__img--first">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/logo-removebg@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/logo-removebg@desktop.png">
+              <source type="image/webp" srcset="img/logo-removebg.webp">
+              <img class="security__icon" src="img/logo-removebg.png" alt="">
+            </picture>
+          </div>
+          <div class="security__box security__box--first">
+            <p class="security__name security__name--first">Registered and regulated</p>
+            <p class="security__desc security__desc--first">§34i GewO</p>
+          </div>
+        </li>
+        <li class="security__item">
+          <div class="security__img">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/padlock@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/padlock@desktop.png">
+              <source type="image/webp" srcset="img/padlock@mobile.webp">
+              <img class="security__icon" src="img/padlock@mobile.png" alt="">
+            </picture>
+          </div>
+          <div class="security__box">
+            <p class="security__name">SSL secure connection</p>
+            <p class="security__desc">100% secured</p>
+          </div>
+        </li>
+        <li class="security__item">
+          <div class="security__img">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/shield@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/shield@desktop.png">
+              <source type="image/webp" srcset="img/shield@mobile.webp">
+              <img class="security__icon" src="img/shield@mobile.png" alt="">
+            </picture>
+          </div>
+          <div class="security__box">
+            <p class="security__name">Data secured</p>
+            <p class="security__desc">SSL certificated</p>
+          </div>
+        </li>
+        <li class="security__item">
+          <div class="security__img">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/france@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/france@desktop.png">
+              <source type="image/webp" srcset="img/france@mobile.webp">
+              <img class="security__icon" src="img/france@mobile.png" alt="">
+            </picture>
+          </div>
+          <div class="security__box">
+            <p class="security__name">Operating and hosting</p>
+            <p class="security__desc">in France</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">© Simpleo 2020 | Politique de confidélité | Mentions Légales </p>
+    <a class="footer__link-site" href="#">Créations des sites web en France</a>
+  </footer>
+  <nav class="sidebar">
+    <ul class="sidebar__group">
+      <li class="sidebar__element"><a class="active" href="#1">01 — Главный экран</a></li>
+      <li class="sidebar__element"><a href="#2">02 — Для кого</a></li>
+      <li class="sidebar__element"><a href="#3">03 — Риски без сервиса</a></li>
+      <li class="sidebar__element"><a href="#4">04 — Варианты решения</a></li>
+      <li class="sidebar__element"><a href="#5">05 — Экстреные и спорные ситуации</a></li>
+      <li class="sidebar__element"><a href="#6">06 — Кейсы</a></li>
+      <li class="sidebar__element"><a href="#7">07 — FAQ</a></li>
+      <li class="sidebar__element"><a href="#8">08 — Отзывы</a></li>
+    </ul>
+  </nav>
+  <script src="js/general.js" defer></script>
+  <section class="cookies">
+    <div class="cookies__content">
+      <h2 class="cookies__title title">Сбор куков</h2>
+      <p class="cookies__text">positives en faveur de l’intérêt général et de l’économie solidaire. On a mobilisé plus de 35</p>
+    </div>
+    <div class="cookies__box">
+      <button class="cookies__button button button--grad">Принять</button>
+      <button class="cookies__button button button--white">Отклонить</button>
+    </div>
+  </section>
+
+<!--  <section class="modal-credit">-->
+<!--    <div class="modal-credit__box">-->
+<!--      <div class="modal-credit__inner">-->
+<!--        <h2 class="modal-credit__title title">Vous cherchez un prêt immobilier ou souhaitez renégocier? </h2>-->
+<!--        <p class="modal-credit__text">Que vous achetiez ou refinanciez une propriété, nos conseillers en prêts immobiliers expérimentés sont disponibles 24 heures sur 24 pour vous aider</p>-->
+<!--        <a href="#" class="modal-credit__button button button&#45;&#45;grad">Simuler mon prêt</a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="modal-credit__wrap">-->
+<!--      <ul class="modal-credit__list">-->
+<!--        <li class="modal-credit__item">-->
+<!--          <img class="modal-credit__img" src="img/modal-background.jpg" alt="">-->
+<!--        </li>-->
+<!--        <li class="modal-credit__item">-->
+<!--          <img class="modal-credit__img" src="img/modal-background.jpg" alt="">-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <div class="modal-credit__control control">-->
+<!--        <button class="control__button control__button&#45;&#45;back control__button&#45;&#45;square">-->
+<!--          <svg>-->
+<!--            <use  xlink:href="img/sprites/sprite.svg#arrow__icon2"></use>-->
+<!--          </svg>-->
+<!--        </button>-->
+<!--        <button class="control__button control__button&#45;&#45;forward control__button&#45;&#45;square">-->
+<!--          <svg>-->
+<!--            <use  xlink:href="img/sprites/sprite.svg#arrow__icon2"></use>-->
+<!--          </svg>-->
+<!--        </button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+</body>
+</html>
