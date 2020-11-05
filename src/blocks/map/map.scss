@@ -9,11 +9,24 @@
   }
 }
 
+.map--short .simplebar-scrollbar {
+  background: #ffffff;
+
+  &::before {
+    background: #ffffff;
+  }
+}
+
+.map--short .simplebar-track.simplebar-horizontal {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .map__title {
   margin-bottom: 25px;
 
   &--short {
     margin-bottom: 35px;
+    color: #ffffff;
   }
 }
 
