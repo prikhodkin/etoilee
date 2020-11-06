@@ -14,9 +14,20 @@
   transition: all 0.3s;
   cursor: pointer;
 
+  &:hover {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: $blue-color;
+  }
+
   &--grad {
     background-image: linear-gradient(90deg, #0257a6 0%, #2d86d9 100%);
     border: none;
+
+    &:hover {
+      background: linear-gradient(90deg, #2C85D8 0%, #2D86D8 100%);
+      color: #ffffff;
+    }
   }
 
   &--white {
